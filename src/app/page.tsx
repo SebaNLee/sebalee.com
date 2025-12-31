@@ -12,7 +12,6 @@ export default function Home() {
       />
       <br />
       <p>TODO</p>
-      <p>precommit hook test</p>
     </div>
   );
 }
