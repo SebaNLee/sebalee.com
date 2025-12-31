@@ -10,8 +10,9 @@ export default function Home() {
         width={100}
         height={20}
       />
-      <br />
-      <p>TODO</p>
+  <br />
+  <p>TODO</p>
+  <p>precommit hook test</p>
     </div>
   );
 }
