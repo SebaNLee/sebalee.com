@@ -46,7 +46,11 @@ export default function BoidsBackground() {
 
       const buffer = worldRef.current.get_boids();
 
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.save();
+      ctx.globalCompositeOperation = "destination-out";
+      ctx.fillStyle = "rgba(0, 0, 0, 0.7)"; // TODO easter egg alfa - 0.08
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.restore();
 
       ctx.fillStyle = "white";
 
