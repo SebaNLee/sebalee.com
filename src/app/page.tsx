@@ -5,7 +5,7 @@ export default function Home() {
     <div className="">
       <Image
         className="dark:invert"
-        src="/next.svg"
+        src="next.svg"
         alt="Next.js logo"
         width={100}
         height={20}
