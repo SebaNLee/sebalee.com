@@ -57,14 +57,11 @@ export default function BoidsBackground() {
       worldRef.current?.set_attractor(e.clientX, e.clientY);
     const onLeave = () => worldRef.current?.clear_attractor();
 
-    document.addEventListener("mousemove", onMove);
-    document.addEventListener("mouseleave", onLeave);
+    canvas.addEventListener("mousemove", onMove);
+    canvas.addEventListener("mouseleave", onLeave);
   };
 
   return (
-    <canvas
-      ref={canvasRef}
-      className="fixed w-full h-full -z-1 bg-gray-950 pointer-events-none"
-    />
+    <canvas ref={canvasRef} className="fixed w-full h-full -z-1 bg-gray-950" />
   );
 }
