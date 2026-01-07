@@ -26,7 +26,7 @@ export default function BoidsBackground() {
     worldRef.current.set_params("cohesion", 3.0);
     worldRef.current.set_params("attraction", 4.5);
     worldRef.current.set_params("noise", 1.7);
-    worldRef.current.set_params("max_speed", 250.0);
+    worldRef.current.set_params("max_speed", 300.0);
     worldRef.current.set_params("perception_radius", 80.0);
     worldRef.current.set_bounce_on_edge(false);
 
@@ -39,7 +39,7 @@ export default function BoidsBackground() {
 
       const buffer = worldRef.current.get_boids();
 
-      ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
+      ctx.fillStyle = "rgba(0, 0, 0, 0.7)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       ctx.fillStyle = "white";
