@@ -28,8 +28,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <BoidsBackground />
-        {children}
+        <div className="h-screen p-13">
+          <div className="relative border border-white h-full">
+            <BoidsBackground />
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );

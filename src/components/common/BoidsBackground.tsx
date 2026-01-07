@@ -6,14 +6,20 @@ import { WorldAPI } from "boids-wasm";
 export default function BoidsBackground() {
   const worldRef = useRef<WorldAPI | null>(null);
 
-  const canvasRef = (canvas: HTMLCanvasElement) => {
+  const canvasRef = (canvas: HTMLCanvasElement | null) => {
+    if (!canvas) {
+      return;
+    }
+
     const ctx = canvas.getContext("2d");
     if (!ctx) {
       return;
     }
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    const { width, height } = canvas.parentElement!.getBoundingClientRect();
+
+    canvas.width = width;
+    canvas.height = height;
 
     const world = new WorldAPI(
       (canvas.width * canvas.height) / 5000,
@@ -53,15 +59,16 @@ export default function BoidsBackground() {
 
     step();
 
-    const onMove = (e: MouseEvent) =>
-      worldRef.current?.set_attractor(e.clientX, e.clientY);
+    const onMove = (e: MouseEvent) => {
+      const { left, top } = canvas.getBoundingClientRect();
+      worldRef.current?.set_attractor(e.clientX - left, e.clientY - top);
+    };
+
     const onLeave = () => worldRef.current?.clear_attractor();
 
     canvas.addEventListener("mousemove", onMove);
     canvas.addEventListener("mouseleave", onLeave);
   };
 
-  return (
-    <canvas ref={canvasRef} className="fixed w-full h-full -z-1 bg-gray-950" />
-  );
+  return <canvas ref={canvasRef} className="absolute w-full h-full" />;
 }
