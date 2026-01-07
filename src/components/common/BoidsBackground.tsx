@@ -11,7 +11,7 @@ export default function BoidsBackground() {
       return;
     }
 
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext("2d", { alpha: true });
     if (!ctx) {
       return;
     }
@@ -20,6 +20,7 @@ export default function BoidsBackground() {
 
     canvas.width = width;
     canvas.height = height;
+    canvas.style.backgroundColor = "transparent";
 
     const world = new WorldAPI(
       (canvas.width * canvas.height) / 5000,
@@ -45,8 +46,7 @@ export default function BoidsBackground() {
 
       const buffer = worldRef.current.get_boids();
 
-      ctx.fillStyle = "rgba(0, 0, 0, 0.7)"; // TODO easter egg alfa - 0.08
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       ctx.fillStyle = "white";
 
