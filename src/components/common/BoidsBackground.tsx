@@ -24,9 +24,9 @@ export default function BoidsBackground() {
     worldRef.current.set_params("separation", 3.1);
     worldRef.current.set_params("alignment", 0.6);
     worldRef.current.set_params("cohesion", 3.0);
-    worldRef.current.set_params("attraction", 2.5);
-    worldRef.current.set_params("noise", 0.7);
-    worldRef.current.set_params("max_speed", 150.0);
+    worldRef.current.set_params("attraction", 4.5);
+    worldRef.current.set_params("noise", 1.7);
+    worldRef.current.set_params("max_speed", 250.0);
     worldRef.current.set_params("perception_radius", 80.0);
     worldRef.current.set_bounce_on_edge(false);
 
@@ -35,11 +35,12 @@ export default function BoidsBackground() {
         return;
       }
 
-      worldRef.current.step(0.032);
+      worldRef.current.step(0.016);
 
       const buffer = worldRef.current.get_boids();
 
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       ctx.fillStyle = "white";
 
