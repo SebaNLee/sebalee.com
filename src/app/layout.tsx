@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import BoidsBackground from "@/components/common/BoidsBackground";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,23 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Google tag (gtag.js) */}
+        <Script
+          id="gtag-1"
+          src="https://www.googletagmanager.com/gtag/js?id=G-MYPY986RMT"
+          strategy="afterInteractive"
+        />
+        {/* Google tag (gtag.js) */}
+        <Script id="gtag-2" strategy="afterInteractive">
+          {`
+          // Google tag (gtag.js)
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-MYPY986RMT');
+        `}
+        </Script>
         <div className="h-screen p-[3%] bg-neutral-950">
           <div className="relative bg-neutral-950 border border-neutral-600 h-full">
             <BoidsBackground />
