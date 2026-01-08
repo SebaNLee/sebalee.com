@@ -33,6 +33,7 @@ export default function RootLayout({
             <BoidsBackground />
             {children}
           </div>
+          <p className="text-right">TODO footer</p>
         </div>
       </body>
     </html>
