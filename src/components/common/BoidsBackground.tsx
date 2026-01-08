@@ -28,14 +28,24 @@ export default function BoidsBackground() {
       canvas.height,
     );
     worldRef.current = world;
-    worldRef.current.set_params("separation", 3.1);
-    worldRef.current.set_params("alignment", 0.6);
-    worldRef.current.set_params("cohesion", 3.0);
-    worldRef.current.set_params("attraction", 4.5);
-    worldRef.current.set_params("noise", 1.7);
-    worldRef.current.set_params("max_speed", 300.0);
-    worldRef.current.set_params("perception_radius", 80.0);
+    worldRef.current.set_params("separation", 4.1);
+    worldRef.current.set_params("alignment", 2.6);
+    worldRef.current.set_params("cohesion", 4.0);
+    worldRef.current.set_params("attraction", 0.15);
+    worldRef.current.set_params("noise", 3.7);
+    worldRef.current.set_params("max_speed", 100.0);
+    worldRef.current.set_params("perception_radius", 30.0);
     worldRef.current.set_bounce_on_edge(false);
+
+    // v.1
+    // worldRef.current.set_params("separation", 3.1);
+    // worldRef.current.set_params("alignment", 0.6);
+    // worldRef.current.set_params("cohesion", 3.0);
+    // worldRef.current.set_params("attraction", 4.5);
+    // worldRef.current.set_params("noise", 1.7);
+    // worldRef.current.set_params("max_speed", 300.0);
+    // worldRef.current.set_params("perception_radius", 80.0);
+    // worldRef.current.set_bounce_on_edge(false);
 
     const step = () => {
       if (!worldRef.current) {
