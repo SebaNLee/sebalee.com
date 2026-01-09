@@ -1,0 +1,58 @@
+.wrapper {
+  position: absolute;
+  left: var(--posx);
+  top: var(--posy);
+
+  font-size: var(--fontSize);
+  color: var(--color);
+}
+
+.text {
+  display: inline-block;
+
+  clip-path: inset(0 100% 0 0);
+
+  animation: text-reveal var(--duration) ease forwards;
+  animation-duration: var(--duration);
+  animation-delay: var(--delay);
+}
+
+@keyframes text-reveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.scanner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  opacity: 0;
+
+  width: 3px;
+  background: rgb(82 82 82);
+
+  animation: scanner ease forwards;
+  animation-duration: var(--duration);
+  animation-delay: var(--delay);
+}
+
+@keyframes scanner {
+  0% {
+    left: 0%;
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 1;
+  }
+
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
+}

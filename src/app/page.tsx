@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { HudBar } from "@/components/hud/bar/hud-bar";
+import { HudRevealText } from "@/components/hud/reveal-text/hud-scanner-text";
 
 export default function Home() {
   return (
@@ -18,7 +19,10 @@ export default function Home() {
           height={20}
         />
         <br />
-        <p>TODO</p>
+        <HudRevealText x={270} y={120} delay={900}>
+          TODO:
+          <p>this is a test |</p>
+        </HudRevealText>
       </div>
     </>
   );
