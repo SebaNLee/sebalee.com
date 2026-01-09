@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistMono.className} ${geistSans.className} antialiased`}
       >
         {/* Google tag (gtag.js) */}
         <Script
