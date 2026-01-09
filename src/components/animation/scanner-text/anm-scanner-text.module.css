@@ -1,7 +1,6 @@
 .wrapper {
-  position: absolute;
-  left: var(--posx);
-  top: var(--posy);
+  position: relative;
+  display: inline-block;
 
   font-size: var(--fontSize);
   color: var(--color);

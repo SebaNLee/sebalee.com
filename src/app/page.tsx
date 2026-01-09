@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { HudBar } from "@/components/hud/bar/hud-bar";
-import { AnmRevealText } from "@/components/animation/reveal-text/anm-scanner-text";
+import { AnmRevealText } from "@/components/animation/scanner-text/anm-scanner-text";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
           height={20}
         />
         <br />
-        <AnmRevealText x={270} y={120} delay={900}>
+        <AnmRevealText delay={900}>
           TODO:
           <p>this is a test |</p>
         </AnmRevealText>

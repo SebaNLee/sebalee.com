@@ -2,8 +2,6 @@ import React from "react";
 import styles from "./anm-scanner-text.module.css";
 
 type Props = {
-  x: number;
-  y: number;
   delay?: number;
   duration?: number;
   color?: string;
@@ -12,8 +10,6 @@ type Props = {
 };
 
 export function AnmRevealText({
-  x,
-  y,
   delay = 0,
   duration = 1000,
   color = "rgb(255 255 255)",
@@ -25,8 +21,6 @@ export function AnmRevealText({
       className={styles.wrapper}
       style={
         {
-          "--posx": `${x}px`,
-          "--posy": `${y}px`,
           "--delay": `${delay}ms`,
           "--duration": `${duration}ms`,
           "--color": color,
