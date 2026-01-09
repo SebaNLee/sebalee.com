@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./hud-scanner-text.module.css";
+import styles from "./anm-scanner-text.module.css";
 
 type Props = {
   x: number;
@@ -11,7 +11,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export function HudRevealText({
+export function AnmRevealText({
   x,
   y,
   delay = 0,
