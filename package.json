@@ -14,7 +14,8 @@
       "prettier --write",
       "eslint"
     ],
-    "*.md": "prettier --write"
+    "*.md": "prettier --write",
+    "*.css": "prettier --write"
   },
   "dependencies": {
     "boids-wasm": "^0.1.0",
