@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { AnmBar } from "@/components/animation/bar/anm-bar";
+import { HudBar } from "@/components/hud/bar/hud-bar";
 import { AnmRevealText } from "@/components/animation/reveal-text/anm-scanner-text";
 
 export default function Home() {
@@ -7,8 +7,8 @@ export default function Home() {
     <>
       <>
         {/* TODO debug */}
-        <AnmBar x={140} y={42} delay={500} length={300} />
-        <AnmBar x={140} y={42} delay={1000} length={300} vertical />
+        <HudBar x={140} y={42} delay={500} length={300} />
+        <HudBar x={140} y={42} delay={1000} length={300} vertical />
       </>
       <div className="">
         <Image

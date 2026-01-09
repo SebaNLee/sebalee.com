@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./anm-bar.module.css";
+import styles from "./hud-bar.module.css";
 
 type Props = {
   x: number;
@@ -12,7 +12,7 @@ type Props = {
   color?: string;
 };
 
-export function AnmBar({
+export function HudBar({
   x,
   y,
   length = 200,
