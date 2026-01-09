@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`monospace antialiased`} // TODO font
+        className={`font-mono antialiased`} // TODO font
       >
         {/* Google tag (gtag.js) */}
         <Script
