@@ -6,8 +6,8 @@ type Props = {
   children: React.ReactNode;
 };
 
-const BASE_WIDTH = 1920;
-const BASE_HEIGHT = 1080;
+export const BASE_WIDTH = 1920;
+export const BASE_HEIGHT = 1080;
 
 export default function HudLayer({ children }: Props) {
   const [scale, setScale] = useState(1);
@@ -18,7 +18,14 @@ export default function HudLayer({ children }: Props) {
       const vw = window.innerWidth;
       const vh = window.innerHeight;
 
-      setScale(Math.min(vw / BASE_WIDTH, vh / BASE_HEIGHT));
+      const targetScale = BASE_WIDTH / BASE_HEIGHT;
+      const currentScale = vw / vh;
+
+      if (targetScale > currentScale) {
+        setScale(Math.min(vw / BASE_WIDTH, vh / BASE_HEIGHT));
+      } else {
+        setScale(Math.max(vw / BASE_WIDTH, vh / BASE_HEIGHT));
+      }
     }
 
     updateScale();

@@ -10,9 +10,10 @@ export default function Home() {
       <>
         {/* TODO debug */}
         <HudLayer>
-          <HudBar x={600} y={20} delay={500} length={300} />
+          <HudBar x={1910} y={20} delay={500} length={300} />
           <HudBar x={600} y={20} delay={1000} length={300} vertical />
-          <HudScanner x={50} y={50} move={400} />
+          <HudBar x={230} y={120} delay={200} length={110} vertical />
+          <HudScanner x={0} y={0} move={1920} length={1920} vertical />
         </HudLayer>
       </>
       <div className="">
