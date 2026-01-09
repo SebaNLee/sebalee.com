@@ -33,7 +33,7 @@
   opacity: 0;
 
   width: 3px;
-  background: rgb(82 82 82);
+  background: var(--scanner-color);
 
   animation: scanner ease forwards;
   animation-duration: var(--duration);

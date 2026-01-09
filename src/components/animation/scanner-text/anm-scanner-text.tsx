@@ -5,6 +5,7 @@ type Props = {
   delay?: number;
   duration?: number;
   fontColor?: string;
+  scannerColor?: string;
   fontSize?: number;
   children: React.ReactNode;
 };
@@ -12,7 +13,8 @@ type Props = {
 export function AnmRevealText({
   delay = 0,
   duration = 1000,
-  fontColor = "rgb(82 82 82)",
+  fontColor = "rgb(255 255 255)",
+  scannerColor = "rgb(82 82 82)",
   fontSize = 16,
   children,
 }: Props) {
@@ -24,6 +26,7 @@ export function AnmRevealText({
           "--delay": `${delay}ms`,
           "--duration": `${duration}ms`,
           "--font-color": fontColor,
+          "--scanner-color": scannerColor,
           "--fontSize": `${fontSize}px`,
         } as React.CSSProperties
       }

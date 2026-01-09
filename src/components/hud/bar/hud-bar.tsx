@@ -9,7 +9,7 @@ type Props = {
   delay?: number;
   duration?: number;
   vertical?: boolean;
-  color?: string;
+  barColor?: string;
 };
 
 export function HudBar({
@@ -20,7 +20,7 @@ export function HudBar({
   delay = 0,
   duration = 650,
   vertical = false,
-  color = "rgb(82 82 82)",
+  barColor = "rgb(82 82 82)",
 }: Props) {
   return (
     <div
@@ -35,7 +35,7 @@ export function HudBar({
           "--duration": `${duration}ms`,
           "--sx": vertical ? 0 : 1,
           "--sy": vertical ? 1 : 0,
-          "--color": color,
+          "--bar-color": barColor,
         } as React.CSSProperties
       }
     />

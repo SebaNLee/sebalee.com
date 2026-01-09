@@ -29,7 +29,11 @@ export default function Home() {
           <p>this is a test |</p>
         </AnmRevealText>
         <br />
-        <AnmRevealText delay={900} fontColor="rgb(0 255 0)">
+        <AnmRevealText
+          delay={900}
+          fontColor="rgb(0 255 0)"
+          scannerColor="rgb(0 0 255)"
+        >
           TODO:
           <p>second test</p>
         </AnmRevealText>

@@ -7,7 +7,7 @@
   width: calc(var(--length) * var(--sx) + var(--thickness) * var(--sy));
   height: calc(var(--length) * var(--sy) + var(--thickness) * var(--sx));
 
-  background: var(--color);
+  background: var(--bar-color);
   opacity: 0;
 
   transform-origin: calc(var(--sx) * 0% + var(--sy) * 50%)
