@@ -3,7 +3,7 @@
   display: inline-block;
 
   font-size: var(--fontSize);
-  color: var(--color);
+  color: var(--font-color);
 }
 
 .text {

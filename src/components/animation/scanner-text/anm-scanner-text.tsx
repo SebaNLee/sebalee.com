@@ -4,7 +4,7 @@ import styles from "./anm-scanner-text.module.css";
 type Props = {
   delay?: number;
   duration?: number;
-  color?: string;
+  fontColor?: string;
   fontSize?: number;
   children: React.ReactNode;
 };
@@ -12,7 +12,7 @@ type Props = {
 export function AnmRevealText({
   delay = 0,
   duration = 1000,
-  color = "rgb(255 255 255)",
+  fontColor = "rgb(82 82 82)",
   fontSize = 16,
   children,
 }: Props) {
@@ -23,7 +23,7 @@ export function AnmRevealText({
         {
           "--delay": `${delay}ms`,
           "--duration": `${duration}ms`,
-          "--color": color,
+          "--font-color": fontColor,
           "--fontSize": `${fontSize}px`,
         } as React.CSSProperties
       }
