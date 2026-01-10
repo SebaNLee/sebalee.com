@@ -45,7 +45,11 @@ export default function Home() {
             TODO:
             <p>second test</p>
           </AnmRevealText>
-          <p className="font-ava text-4xl">FONT: AVA REGULAR</p>
+          {/* <div className="items-end justify-items-center">
+            <p className="font-ava text-4xl">Sebastian Nicolas Lee</p>
+            <p className="font-ibm text-xs">Software Engineering Student</p>
+            <p className="font-ibm-logo text-x1">Test</p>
+          </div> */}
         </div>
       </div>
     </>
