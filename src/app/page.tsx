@@ -45,6 +45,7 @@ export default function Home() {
             TODO:
             <p>second test</p>
           </AnmRevealText>
+          <p className="font-ava text-4xl">FONT: AVA REGULAR</p>
         </div>
       </div>
     </>

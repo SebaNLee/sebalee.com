@@ -21,3 +21,15 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+@font-face {
+  font-family: "AVA";
+  src: url("/fonts/AVA-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-ava: "AVA", sans-serif;
+}
