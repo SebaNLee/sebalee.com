@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import BoidsBackground from "@/components/layout/boids-background";
 import Script from "next/script";
+import { ThemeProvider } from "@/components/layout/theme-provider";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 export const metadata: Metadata = {
   title: "Create Next App", // TODO
@@ -14,34 +16,34 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    // TODO suppressHydrationWarning
     <html lang="en">
-      <body
-        className={`font-mono antialiased`} // TODO font
-      >
-        {/* Google tag (gtag.js) */}
-        <Script
-          id="gtag-1"
-          src="https://www.googletagmanager.com/gtag/js?id=G-MYPY986RMT"
-          strategy="afterInteractive"
-        />
-        {/* Google tag (gtag.js) */}
-        <Script id="gtag-2" strategy="afterInteractive">
-          {`
-          // Google tag (gtag.js)
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+      <body className="font-mono antialiased">
+        <ThemeProvider>
+          {/* Google tag (gtag.js) */}
+          <Script
+            id="gtag-1"
+            src="https://www.googletagmanager.com/gtag/js?id=G-MYPY986RMT"
+            strategy="afterInteractive"
+          />
+          {/* Google tag (gtag.js) */}
+          <Script id="gtag-2" strategy="afterInteractive">
+            {`
+            // Google tag (gtag.js)
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-          gtag('config', 'G-MYPY986RMT');
-        `}
-        </Script>
-        <div className="h-screen p-[3%] bg-neutral-950">
-          <div className="relative bg-neutral-950 border border-neutral-600 rounded-xl w-full h-full">
-            <BoidsBackground />
-            {children}
+            gtag('config', 'G-MYPY986RMT');
+          `}
+          </Script>
+          <div className="h-screen p-[2%] bg-neutral-200 text-neutral-950 dark:bg-neutral-950 dark:text-neutral-100">
+            <div className="relative bg-neutral-200 border-neutral-800 dark:bg-neutral-950 border dark:border-neutral-600 rounded-xl w-full h-full">
+              <BoidsBackground />
+              {children}
+            </div>
           </div>
-          <p className="text-right">TODO footer</p>
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   );
