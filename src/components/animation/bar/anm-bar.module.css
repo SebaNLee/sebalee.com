@@ -1,6 +1,5 @@
 .bar {
   display: inline-block;
-  pointer-events: none;
 
   width: calc(
     var(--length) * (1 - var(--vertical)) + var(--thickness) * var(--vertical)

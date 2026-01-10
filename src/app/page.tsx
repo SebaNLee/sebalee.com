@@ -2,12 +2,13 @@ import Image from "next/image";
 import { AnmBar } from "@/components/animation/bar/anm-bar";
 import { AnmRevealText } from "@/components/animation/scanner-text/anm-scanner-text";
 import { AnmScanner } from "@/components/animation/scanner/anm-scanner";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <div className="relative w-full h-full">
-        <div className="absolute w-full h-full">
+        <div className="absolute w-full h-full pointer-events-none">
           <AnmBar delay={200} length={10.1} vertical />
           <AnmBar delay={500} length={20} />
           <AnmBar delay={1000} length={15} vertical />
@@ -50,6 +51,21 @@ export default function Home() {
             <p className="font-ibm text-xs">Software Engineering Student</p>
             <p className="font-ibm-logo text-x1">Test</p>
           </div> */}
+          <div>
+            <br />
+            <AnmRevealText delay={900}>
+              <Link href="/about">About</Link>
+            </AnmRevealText>
+            <br />
+            <AnmRevealText delay={1200}>
+              <Link href="/gallery">Gallery</Link>
+            </AnmRevealText>
+            <br />
+            <AnmRevealText delay={1500}>
+              <Link href="/Proyects">Proyects</Link>
+            </AnmRevealText>
+            <br />
+          </div>
         </div>
       </div>
     </>
