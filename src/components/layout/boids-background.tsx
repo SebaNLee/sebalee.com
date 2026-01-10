@@ -58,7 +58,7 @@ export default function BoidsBackground() {
 
       ctx.save();
       ctx.globalCompositeOperation = "destination-out";
-      ctx.fillStyle = "rgba(0, 0, 0, 0.7)"; // TODO easter egg alfa - 0.08
+      ctx.fillStyle = "rgb(0, 0, 0)"; // easter egg: rgba(0, 0, 0, 0)
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.restore();
 
