@@ -1,9 +1,7 @@
 import React from "react";
-import styles from "./hud-bar.module.css";
+import styles from "./anm-bar.module.css";
 
 type Props = {
-  x: number;
-  y: number;
   length?: number;
   thickness?: number;
   delay?: number;
@@ -12,9 +10,7 @@ type Props = {
   barColor?: string;
 };
 
-export function HudBar({
-  x,
-  y,
+export function AnmBar({
   length = 200,
   thickness = 1,
   delay = 0,
@@ -27,8 +23,6 @@ export function HudBar({
       className={styles.bar}
       style={
         {
-          "--posx": `${x}px`,
-          "--posy": `${y}px`,
           "--length": `${length}px`,
           "--thickness": `${thickness}px`,
           "--delay": `${delay}ms`,

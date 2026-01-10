@@ -1,7 +1,5 @@
 .bar {
-  position: absolute;
-  left: var(--posx);
-  top: var(--posy);
+  display: inline-block;
   pointer-events: none;
 
   width: calc(var(--length) * var(--sx) + var(--thickness) * var(--sy));

@@ -1,17 +1,17 @@
 import Image from "next/image";
-import { HudBar } from "@/components/hud/bar/hud-bar";
+import { AnmBar } from "@/components/animation/bar/anm-bar";
 import { AnmRevealText } from "@/components/animation/scanner-text/anm-scanner-text";
-import HudScanner from "@/components/hud/scanner/hud-scanner";
+import HudScanner from "@/components/animation/scanner/anm-scanner";
 
 export default function Home() {
   return (
     <>
       <>
         {/* TODO debug */}
-        <HudBar x={1910} y={20} delay={500} length={300} />
-        <HudBar x={600} y={20} delay={1000} length={300} vertical />
-        <HudBar x={230} y={120} delay={200} length={110} vertical />
-        <HudScanner x={0} y={0} move={1920} length={1920} vertical />
+        <AnmBar delay={500} length={300} />
+        <AnmBar delay={1000} length={300} vertical />
+        <AnmBar delay={200} length={110} vertical />
+        <HudScanner x={0} y={0} move={600} length={200} vertical />
       </>
       <div className="">
         <Image
