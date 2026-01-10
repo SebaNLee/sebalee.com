@@ -35,8 +35,9 @@ export default function RootLayout({
           gtag('config', 'G-MYPY986RMT');
         `}
         </Script>
-        <div className="h-screen p-[3%] bg-neutral-950">
-          <div className="relative bg-neutral-950 border border-neutral-600 rounded-xl w-full h-full">
+        <div className="h-screen p-[2%] bg-neutral-200">
+          <div className="relative bg-neutral-200 border border-neutral-950 text-neutral-950 rounded-xl w-full h-full">
+            test
             <BoidsBackground />
             {children}
           </div>

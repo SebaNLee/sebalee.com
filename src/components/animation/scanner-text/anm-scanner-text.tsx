@@ -13,8 +13,8 @@ type Props = {
 export function AnmRevealText({
   delay = 0,
   duration = 1000,
-  fontColor = "rgb(255 255 255)",
-  scannerColor = "rgb(82 82 82)",
+  fontColor = "rgb(10 10 10)",
+  scannerColor = "rgb(10 10 10)",
   fontSize = 16,
   children,
 }: Props) {

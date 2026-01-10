@@ -62,7 +62,7 @@ export default function BoidsBackground() {
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.restore();
 
-      ctx.fillStyle = "white";
+      ctx.fillStyle = "black";
 
       for (let i = 0; i < buffer.length; i += 2) {
         ctx.fillRect(buffer[i], buffer[i + 1], 1, 1);

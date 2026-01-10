@@ -22,7 +22,7 @@ export function AnmScanner({
   delay = 0,
   duration = 1900,
   vertical = false,
-  scannerColor = "rgb(82 82 82)",
+  scannerColor = "rgb(10 10 10)",
 }: Props) {
   return (
     <div

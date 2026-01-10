@@ -16,7 +16,7 @@ export function AnmBar({
   delay = 0,
   duration = 650,
   vertical = false,
-  barColor = "rgb(82 82 82)",
+  barColor = "rgb(10 10 10)",
 }: Props) {
   return (
     <div
