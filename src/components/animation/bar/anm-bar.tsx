@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./anm-bar.module.css";
 
 type Props = {
-  length?: number; // vw or vh
+  length?: number; // %
   thickness?: number; // px
   delay?: number;
   duration?: number;
@@ -23,12 +23,11 @@ export function AnmBar({
       className={styles.bar}
       style={
         {
-          "--length": vertical ? `${length}vh` : `${length}vw`,
+          "--length": `${length}%`,
           "--thickness": `${thickness}px`,
           "--delay": `${delay}ms`,
           "--duration": `${duration}ms`,
-          "--sx": vertical ? 0 : 1,
-          "--sy": vertical ? 1 : 0,
+          "--vertical": vertical ? 1 : 0,
           "--bar-color": barColor,
         } as React.CSSProperties
       }
