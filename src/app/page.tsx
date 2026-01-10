@@ -62,7 +62,7 @@ export default function Home() {
             </AnmRevealText>
             <br />
             <AnmRevealText delay={1500}>
-              <Link href="/Proyects">Proyects</Link>
+              <Link href="/projects">Projects</Link>
             </AnmRevealText>
             <br />
           </div>
