@@ -8,19 +8,20 @@ export default function Home() {
     <>
       <div className="relative w-full h-full">
         <div className="absolute w-full h-full">
-          {/* TODO debug */}
           <AnmBar delay={200} length={10.1} vertical />
           <AnmBar delay={500} length={20} />
           <AnmBar delay={1000} length={15} vertical />
           <AnmScanner delay={50} x={0} y={0} move={100} length={100} vertical />
           <AnmScanner
-            delay={400}
+            delay={50}
             x={100}
             y={0}
             move={-100}
             length={100}
             vertical
           />
+          <AnmScanner delay={50} x={0} y={0} move={100} length={100} />
+          <AnmScanner delay={50} x={0} y={100} move={-100} length={100} />
         </div>
         <div>
           <Image

@@ -45,11 +45,12 @@
     left: 0%;
     opacity: 1;
   }
-
-  55% {
+  1% {
     opacity: 1;
   }
-
+  50% {
+    opacity: 1;
+  }
   100% {
     left: 110%;
     opacity: 0;
