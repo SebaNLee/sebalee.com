@@ -13,7 +13,7 @@ type Props = {
   scannerColor?: string;
 };
 
-export default function AnmScanner({
+export function AnmScanner({
   x,
   y,
   move,
