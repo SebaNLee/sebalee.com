@@ -3,6 +3,7 @@ import { AnmBar } from "@/components/animation/bar/anm-bar";
 import { AnmRevealText } from "@/components/animation/scanner-text/anm-scanner-text";
 import { AnmScanner } from "@/components/animation/scanner/anm-scanner";
 import Link from "next/link";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 export default function Home() {
   return (
@@ -65,6 +66,7 @@ export default function Home() {
               <Link href="/Proyects">Proyects</Link>
             </AnmRevealText>
             <br />
+            <ThemeToggle />
           </div>
         </div>
       </div>
