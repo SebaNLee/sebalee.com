@@ -37,7 +37,6 @@ export default function RootLayout({
         </Script>
         <div className="h-screen p-[2%] bg-neutral-200">
           <div className="relative bg-neutral-200 border border-neutral-950 text-neutral-950 rounded-xl w-full h-full">
-            test
             <BoidsBackground />
             {children}
           </div>
