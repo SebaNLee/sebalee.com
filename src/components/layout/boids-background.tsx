@@ -80,8 +80,9 @@ export default function BoidsBackground() {
 
     const onLeave = () => worldRef.current?.clear_attractor();
 
-    canvas.addEventListener("mousemove", onMove);
-    canvas.addEventListener("mouseleave", onLeave);
+    const container = canvas.parentElement!;
+    container.addEventListener("mousemove", onMove);
+    container.addEventListener("mouseleave", onLeave);
   };
 
   return <canvas ref={canvasRef} className="absolute w-full h-full" />;
