@@ -23,7 +23,7 @@ export function AnmBar({
       className={styles.bar}
       style={
         {
-          "--length": `${length}vw`,
+          "--length": vertical ? `${length}vh` : `${length}vw`,
           "--thickness": `${thickness}px`,
           "--delay": `${delay}ms`,
           "--duration": `${duration}ms`,
