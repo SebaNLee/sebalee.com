@@ -25,11 +25,23 @@ body {
 @font-face {
   font-family: "AVA";
   src: url("/fonts/AVA-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM-Logo";
+  src: url("/fonts/IBM-Logo.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("/fonts/Web437_IBM_BIOS.woff") format("woff");
   font-display: swap;
 }
 
 @theme {
   --font-ava: "AVA", sans-serif;
+  --font-ibm-logo: "IBM-Logo", monospace;
+  --font-ibm: "IBM", monospace;
 }
