@@ -6,13 +6,13 @@ import HudScanner from "@/components/animation/scanner/anm-scanner";
 export default function Home() {
   return (
     <>
-      <>
+      <div className="absolute">
         {/* TODO debug */}
-        <AnmBar delay={500} length={300} />
-        <AnmBar delay={1000} length={300} vertical />
-        <AnmBar delay={200} length={110} vertical />
+        <AnmBar delay={200} length={10.1} vertical />
+        <AnmBar delay={500} length={20} />
+        <AnmBar delay={1000} length={15} vertical />
         <HudScanner x={0} y={0} move={600} length={200} vertical />
-      </>
+      </div>
       <div className="">
         <Image
           className="dark:invert"
