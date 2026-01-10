@@ -4,12 +4,8 @@
   top: var(--posy);
   pointer-events: none;
 
-  width: calc(
-    var(--length) * (1 - var(--vertical)) + var(--thickness) * var(--vertical)
-  );
-  height: calc(
-    var(--length) * var(--vertical) + var(--thickness) * (1 - var(--vertical))
-  );
+  width: calc(var(--length) * var(--sx) + var(--thickness) * var(--sy));
+  height: calc(var(--length) * var(--sy) + var(--thickness) * var(--sx));
 
   background: var(--scanner-color);
   opacity: 0;
@@ -32,8 +28,8 @@
     opacity: 1;
   }
   100% {
-    left: calc(var(--posx) + var(--vertical) * var(--move));
-    top: calc(var(--posy) + (1 - var(--vertical)) * var(--move));
+    left: calc(var(--posy) + var(--sy) * var(--move));
+    top: calc(var(--posx) + var(--sx) * var(--move));
     opacity: 0;
   }
 }
