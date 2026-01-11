@@ -1,0 +1,23 @@
+.rectangle {
+  position: absolute;
+  left: var(--posx);
+  top: var(--posy);
+
+  width: var(--width);
+  height: var(--height);
+
+  background: var(--color);
+  opacity: 0;
+
+  animation: reveal var(--duration) ease forwards;
+  animation-delay: var(--delay);
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
