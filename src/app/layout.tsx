@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import BoidsBackground from "@/components/layout/boids-background";
 import Script from "next/script";
+import { AnmBar } from "@/components/animation/bar/anm-bar";
 
 export const metadata: Metadata = {
   title: "Create Next App", // TODO
@@ -35,12 +36,17 @@ export default function RootLayout({
           gtag('config', 'G-MYPY986RMT');
         `}
         </Script>
-        <div className="h-screen p-[2%] bg-neutral-200">
-          <div className="relative bg-neutral-200 border border-neutral-950 text-neutral-950 rounded-xl w-full h-full">
+        <div className="relative h-screen w-screen p-[2%] bg-neutral-200">
+          <div className="relative h-full w-full bg-neutral-200 text-neutral-950">
             <BoidsBackground />
             {children}
           </div>
-          <p className="text-right">TODO footer</p>
+          <div className="absolute inset-0 pointer-events-none">
+            <AnmBar x={2} y={2} delay={300} length={96} />
+            <AnmBar x={2} y={2} delay={600} length={96} vertical />
+            <AnmBar x={2} y={98} delay={900} length={96} />
+            <AnmBar x={98} y={2} delay={1200} length={96} vertical />
+          </div>
         </div>
       </body>
     </html>
