@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./anm-bar.module.css";
 
 type Props = {
+  x: number; // %
+  y: number; // %
   length?: number; // %
   thickness?: number; // px
   delay?: number;
@@ -11,6 +13,8 @@ type Props = {
 };
 
 export function AnmBar({
+  x,
+  y,
   length = 20,
   thickness = 1,
   delay = 0,
@@ -23,6 +27,8 @@ export function AnmBar({
       className={styles.bar}
       style={
         {
+          "--posx": `${x}%`,
+          "--posy": `${y}%`,
           "--length": `${length}%`,
           "--thickness": `${thickness}px`,
           "--delay": `${delay}ms`,
