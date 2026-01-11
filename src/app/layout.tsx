@@ -4,6 +4,7 @@ import BoidsBackground from "@/components/layout/boids-background";
 import Script from "next/script";
 import { AnmBar } from "@/components/animation/bar/anm-bar";
 import { AnmRectangle } from "@/components/animation/rectangle/anm-rectangle";
+import NavBar from "@/components/layout/nav-bar";
 
 export const metadata: Metadata = {
   title: "Create Next App", // TODO
@@ -38,8 +39,9 @@ export default function RootLayout({
         `}
         </Script>
         <div className="relative h-screen w-screen px-[2%] py-[1.5%] bg-neutral-200">
-          <div className="relative h-full w-full bg-neutral-200 text-neutral-950">
+          <div className="relative h-full w-full bg-neutral-200 text-black">
             <BoidsBackground />
+            <NavBar />
             {children}
           </div>
           <div className="absolute inset-0 pointer-events-none">
