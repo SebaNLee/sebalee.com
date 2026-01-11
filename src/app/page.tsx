@@ -10,17 +10,17 @@ export default function Home() {
       <div className="absolute inset-0 pointer-events-none">
         <AnmBar x={20} y={20} delay={500} length={20} />
         <AnmBar x={20} y={20} delay={1000} length={15} vertical />
-        <AnmScanner delay={50} x={0} y={0} move={100} length={100} vertical />
+        <AnmScanner delay={1500} x={0} y={0} move={100} length={100} vertical />
         <AnmScanner
-          delay={50}
+          delay={1500}
           x={100}
           y={0}
           move={-100}
           length={100}
           vertical
         />
-        <AnmScanner delay={50} x={0} y={0} move={100} length={100} />
-        <AnmScanner delay={50} x={0} y={100} move={-100} length={100} />
+        <AnmScanner delay={1500} x={0} y={0} move={100} length={100} />
+        <AnmScanner delay={1500} x={0} y={100} move={-100} length={100} />
       </div>
       <div>
         <br />

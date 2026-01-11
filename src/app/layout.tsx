@@ -42,10 +42,12 @@ export default function RootLayout({
             {children}
           </div>
           <div className="absolute inset-0 pointer-events-none">
-            <AnmBar x={2} y={2} delay={300} length={96} />
-            <AnmBar x={2} y={2} delay={600} length={96} vertical />
-            <AnmBar x={2} y={98} delay={900} length={96} />
-            <AnmBar x={98} y={2} delay={1200} length={96} vertical />
+            <AnmBar x={0} y={2} delay={700} length={100} />
+            <AnmBar x={0} y={3} delay={700} length={100} />
+            <AnmBar x={0} y={98} delay={700} length={100} />
+
+            <AnmBar x={2} y={0} delay={100} length={100} vertical />
+            <AnmBar x={98} y={0} delay={100} length={100} vertical />
           </div>
         </div>
       </body>
