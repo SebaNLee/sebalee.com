@@ -3,6 +3,7 @@ import "./globals.css";
 import BoidsBackground from "@/components/layout/boids-background";
 import Script from "next/script";
 import { AnmBar } from "@/components/animation/bar/anm-bar";
+import { AnmRectangle } from "@/components/animation/rectangle/anm-rectangle";
 
 export const metadata: Metadata = {
   title: "Create Next App", // TODO
@@ -36,7 +37,7 @@ export default function RootLayout({
           gtag('config', 'G-MYPY986RMT');
         `}
         </Script>
-        <div className="relative h-screen w-screen p-[2%] bg-neutral-200">
+        <div className="relative h-screen w-screen px-[2%] py-[1.5%] bg-neutral-200">
           <div className="relative h-full w-full bg-neutral-200 text-neutral-950">
             <BoidsBackground />
             {children}
@@ -44,10 +45,16 @@ export default function RootLayout({
           <div className="absolute inset-0 pointer-events-none">
             <AnmBar x={0} y={2} delay={700} length={100} />
             <AnmBar x={0} y={3} delay={700} length={100} />
-            <AnmBar x={0} y={98} delay={700} length={100} />
+            <AnmBar x={0} y={97.5} delay={700} length={100} />
+            <AnmBar x={0} y={98.5} delay={700} length={100} />
 
             <AnmBar x={2} y={0} delay={100} length={100} vertical />
             <AnmBar x={98} y={0} delay={100} length={100} vertical />
+
+            <AnmRectangle x={0} y={2} width={2} height={1} delay={1300} />
+            <AnmRectangle x={98} y={2} width={2} height={1} delay={1400} />
+            <AnmRectangle x={0} y={97.5} width={2} height={1} delay={1500} />
+            <AnmRectangle x={98} y={97.5} width={2} height={1} delay={1600} />
           </div>
         </div>
       </body>

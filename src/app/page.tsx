@@ -23,6 +23,7 @@ export default function Home() {
         <AnmScanner delay={1500} x={0} y={100} move={-100} length={100} />
       </div>
       <div>
+        <div className="">start here</div>
         <br />
         <AnmRevealText delay={900}>
           TODO:
