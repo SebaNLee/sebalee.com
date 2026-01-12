@@ -14,7 +14,6 @@
     180ms ease;
 }
 
-/* top-left */
 .item::before {
   top: -2px;
   left: -4px;
@@ -23,7 +22,6 @@
   transform: translate(-6px, -6px);
 }
 
-/* bottom-right */
 .item::after {
   bottom: -2px;
   right: -4px;
