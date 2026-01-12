@@ -38,8 +38,8 @@ export default function RootLayout({
           gtag('config', 'G-MYPY986RMT');
         `}
         </Script>
-        <div className="relative flex flex-col min-h-screen w-screen px-[2vw] pt-[7.5vh] pb-[2.5vh] bg-neutral-200">
-          <div className="relative flex-1 h-full w-full bg-neutral-200 text-black">
+        <div className="relative flex flex-col min-h-screen w-screen px-[2vw] pt-[7.5vh] pb-[2.5vh] bg-[rgb(238,242,250)]">
+          <div className="relative flex-1 h-full w-full bg-[rgb(238,242,250)] text-black">
             <BoidsBackground />
             {children}
           </div>
