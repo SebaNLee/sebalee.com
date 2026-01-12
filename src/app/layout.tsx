@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-inter font-medium antialiased`} // TODO font
+        className={`font-inter font-medium antialiased text-neutral-950 bg-[rgb(238,242,250)]`} // TODO font
       >
         {/* Google tag (gtag.js) */}
         <Script
@@ -38,8 +38,8 @@ export default function RootLayout({
           gtag('config', 'G-MYPY986RMT');
         `}
         </Script>
-        <div className="relative flex flex-col min-h-screen w-screen px-[2vw] pt-[7.5vh] pb-[2.5vh] bg-[rgb(238,242,250)]">
-          <div className="relative flex-1 h-full w-full bg-[rgb(238,242,250)] text-black">
+        <div className="relative flex flex-col min-h-screen w-screen px-[2vw] pt-[7.5vh] pb-[2.5vh]">
+          <div className="relative flex-1 h-full w-full">
             <BoidsBackground />
             {children}
           </div>
