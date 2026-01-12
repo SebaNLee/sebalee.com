@@ -5,6 +5,7 @@ import Script from "next/script";
 import { AnmBar } from "@/components/animation/bar/anm-bar";
 import { AnmRectangle } from "@/components/animation/rectangle/anm-rectangle";
 import NavBar from "@/components/layout/nav-bar/nav-bar";
+import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-text";
 
 export const metadata: Metadata = {
   title: "Create Next App", // TODO
@@ -41,7 +42,7 @@ export default function RootLayout({
         <div className="relative flex flex-col min-h-screen w-screen px-[2vw] pt-[7.5vh] pb-[2.5vh]">
           <div className="relative flex-1 h-full w-full">
             <BoidsBackground />
-            {children}
+            <AnmRevealText delay={2500}>{children}</AnmRevealText>
           </div>
           <NavBar />
           <div className="absolute inset-0 pointer-events-none">

@@ -18,7 +18,7 @@ export function AnmRevealText({ delay = 0, duration = 900, children }: Props) {
         } as React.CSSProperties
       }
     >
-      <span className={styles.text}>{children}</span>
+      <div className={styles.content}>{children}</div>
     </div>
   );
 }

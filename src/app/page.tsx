@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <div className="absolute inset-0 pointer-events-none"></div>
       <div>
-        <AnmRevealText delay={900}>
-          <div className="w-min h-max">
+        <AnmRevealText delay={500}>
+          <div>
             <p className="font-satoshi text-4xl">Sebastian Nicolas Lee</p>
             <p className="font-satoshi text-xs">Software Engineering Student</p>
             <p className="font-satoshi text-x1">Test</p>
