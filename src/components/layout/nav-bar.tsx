@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     //border border-neutral-950 rounded-2xl
-    <div className="absolute left-[3vw] right-[3vw] top-[8.5vh] bottom-[86.5vh] flex justify-center p-1">
+    <div className="absolute left-[3vw] right-[3vw] top-[3.4vh] bottom-[92.6vh] flex justify-center p-1">
       <AnmRevealText delay={1500}>
         <nav className="flex gap-6">
           {links.map(({ href, label }) => (
