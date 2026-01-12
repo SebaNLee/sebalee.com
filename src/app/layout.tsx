@@ -38,16 +38,16 @@ export default function RootLayout({
           gtag('config', 'G-MYPY986RMT');
         `}
         </Script>
-        <div className="relative flex flex-col min-h-screen w-screen px-[2%] py-[1.5%] bg-neutral-200">
-          <NavBar />
+        <div className="relative flex flex-col min-h-screen w-screen px-[2vw] pt-[7.5vh] pb-[2.5vh] bg-neutral-200">
           <div className="relative flex-1 h-full w-full bg-neutral-200 text-black">
             <BoidsBackground />
             {children}
           </div>
+          <NavBar />
           <div className="absolute inset-0 pointer-events-none">
             <AnmBar x={0} y={2} delay={700} length={100} />
             <AnmBar x={0} y={3} delay={700} length={100} />
-            <AnmBar x={0} y={7.4} delay={700} length={100} />
+            <AnmBar x={0} y={7.5} delay={700} length={100} />
             <AnmBar x={0} y={97.5} delay={700} length={100} />
             <AnmBar x={0} y={98.5} delay={700} length={100} />
 
