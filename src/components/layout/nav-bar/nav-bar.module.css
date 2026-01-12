@@ -1,0 +1,41 @@
+.item {
+  position: relative;
+}
+
+.item::before,
+.item::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  opacity: 0;
+  transition:
+    180ms ease,
+    180ms ease;
+}
+
+/* top-left */
+.item::before {
+  top: -2px;
+  left: -4px;
+  border-top: 1px solid currentColor;
+  border-left: 1px solid currentColor;
+  transform: translate(-6px, -6px);
+}
+
+/* bottom-right */
+.item::after {
+  bottom: -2px;
+  right: -4px;
+  border-bottom: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  transform: translate(6px, 6px);
+}
+
+.item:hover::before,
+.item:hover::after,
+.active::before,
+.active::after {
+  opacity: 1;
+  transform: translate(0, 0);
+}

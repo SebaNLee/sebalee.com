@@ -4,7 +4,7 @@ import BoidsBackground from "@/components/layout/boids-background";
 import Script from "next/script";
 import { AnmBar } from "@/components/animation/bar/anm-bar";
 import { AnmRectangle } from "@/components/animation/rectangle/anm-rectangle";
-import NavBar from "@/components/layout/nav-bar";
+import NavBar from "@/components/layout/nav-bar/nav-bar";
 
 export const metadata: Metadata = {
   title: "Create Next App", // TODO
