@@ -29,6 +29,7 @@ export default function Home() {
           TODO:
           <p>this is a test |</p>
         </AnmRevealText>
+        <hr />
         <br />
         <AnmRevealText
           delay={900}
@@ -57,6 +58,7 @@ export default function Home() {
             <Link href="/projects">Projects</Link>
           </AnmRevealText>
           <br />
+          <p className="border ">border test</p>
         </div>
       </div>
     </>
