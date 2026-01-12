@@ -4,10 +4,12 @@ import { AnmScannerText } from "@/components/animation/scanner-text/anm-scanner-
 import { AnmScanner } from "@/components/animation/scanner/anm-scanner";
 import Link from "next/link";
 import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-text";
+import { AnmRevealGrid } from "@/components/animation/reveal-grid/anm-reveal-grid";
 
 export default function Home() {
   return (
     <>
+      <AnmRevealGrid invertOpacity />
       <div className="absolute inset-0 pointer-events-none"></div>
       <div>
         <AnmRevealText delay={500}>

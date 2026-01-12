@@ -1,3 +1,10 @@
+import { AnmRevealGrid } from "@/components/animation/reveal-grid/anm-reveal-grid";
+
 export default function Gallery() {
-  return <p>gallery TODO</p>;
+  return (
+    <>
+      <AnmRevealGrid invertOpacity />
+      <p>gallery TODO</p>
+    </>
+  );
 }
