@@ -43,7 +43,9 @@ export default function RootLayout({
           <div className="relative flex-1 h-full w-full">
             <AnmRevealText delay={2500}>{children}</AnmRevealText>
           </div>
-          <NavBar />
+          <div className="absolute left-0 right-0 top-[5.25%] flex justify-center ">
+            <NavBar />
+          </div>
           <div className="absolute inset-0 pointer-events-none">
             <AnmBar x={0} y={2} delay={700} length={100} />
             <AnmBar x={0} y={3} delay={700} length={100} />

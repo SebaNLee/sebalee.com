@@ -17,7 +17,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="absolute left-[3vw] right-[3vw] top-[3.4vh] bottom-[92.6vh] flex justify-center p-1">
+    <div className="-translate-y-1/2">
       <AnmScannerText delay={1500}>
         <nav className="flex gap-7 px-3">
           {links.map(({ href, label }) => (
