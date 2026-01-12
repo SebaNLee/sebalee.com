@@ -1,3 +1,3 @@
-export default function About() {
-  return <p>about TODO</p>;
+export default function Lab() {
+  return <p>lab TODO</p>;
 }
