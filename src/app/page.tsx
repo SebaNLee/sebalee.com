@@ -1,15 +1,23 @@
 import Image from "next/image";
 import { AnmBar } from "@/components/animation/bar/anm-bar";
-import { AnmRevealText } from "@/components/animation/scanner-text/anm-scanner-text";
+import { AnmScannerText } from "@/components/animation/scanner-text/anm-scanner-text";
 import { AnmScanner } from "@/components/animation/scanner/anm-scanner";
 import Link from "next/link";
+import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-text";
 
 export default function Home() {
   return (
     <>
       <div className="absolute inset-0 pointer-events-none"></div>
       <div>
-        <div className="">start here</div>
+        <AnmRevealText delay={900}>
+          <div className="w-min h-max">
+            <p className="font-satoshi text-4xl">Sebastian Nicolas Lee</p>
+            <p className="font-satoshi text-xs">Software Engineering Student</p>
+            <p className="font-satoshi text-x1">Test</p>
+          </div>
+        </AnmRevealText>
+
         {/* <div className="items-end justify-items-center">
           <p className="font-ava text-4xl">Sebastian Nicolas Lee</p>
           <p className="font-ibm text-xs">Software Engineering Student</p>

@@ -1,0 +1,27 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.text {
+  display: inline-block;
+
+  opacity: 0;
+  filter: blur(4px);
+
+  animation: reveal ease forwards;
+  animation-duration: var(--duration);
+  animation-delay: var(--delay);
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
