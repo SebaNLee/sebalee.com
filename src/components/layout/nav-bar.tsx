@@ -16,7 +16,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="flex justify-center py-1">
+    //border border-neutral-950 rounded-2xl
+    <div className="absolute left-[3vw] right-[3vw] top-[8.5vh] bottom-[86.5vh] flex justify-center p-1">
       <AnmRevealText delay={1500}>
         <nav className="flex gap-6">
           {links.map(({ href, label }) => (
@@ -28,7 +29,7 @@ export default function Navbar() {
                 pathname === href && "font-semibold",
               )}
             >
-              <span className="text-lg">{label}</span>
+              <span className="text-sm">{label}</span>
             </Link>
           ))}
         </nav>
