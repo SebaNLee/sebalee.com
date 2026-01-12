@@ -9,6 +9,7 @@ type Props = {
   delay?: number;
   duration?: number;
   color?: string;
+  invertOpacity?: boolean;
 };
 
 export function AnmRectangle({
@@ -19,6 +20,7 @@ export function AnmRectangle({
   delay = 0,
   duration = 600,
   color = "rgb(10 10 10)",
+  invertOpacity = false,
 }: Props) {
   return (
     <div
@@ -32,6 +34,7 @@ export function AnmRectangle({
           "--delay": `${delay}ms`,
           "--duration": `${duration}ms`,
           "--color": color,
+          "--invert-opacity": invertOpacity ? 1 : 0,
         } as React.CSSProperties
       }
     />

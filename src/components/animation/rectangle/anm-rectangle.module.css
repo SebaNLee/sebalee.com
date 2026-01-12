@@ -7,7 +7,7 @@
   height: var(--height);
 
   background: var(--color);
-  opacity: 0;
+  opacity: var(--invert-opacity);
 
   animation: reveal var(--duration) ease forwards;
   animation-delay: var(--delay);
@@ -15,9 +15,9 @@
 
 @keyframes reveal {
   from {
-    opacity: 0;
+    opacity: var(--invert-opacity);
   }
   to {
-    opacity: 1;
+    opacity: calc(1 - var(--invert-opacity));
   }
 }
