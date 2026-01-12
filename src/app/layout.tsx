@@ -41,7 +41,6 @@ export default function RootLayout({
         </Script>
         <div className="relative flex flex-col min-h-screen w-screen px-[2vw] pt-[7.5vh] pb-[2.5vh]">
           <div className="relative flex-1 h-full w-full">
-            <BoidsBackground />
             <AnmRevealText delay={2500}>{children}</AnmRevealText>
           </div>
           <NavBar />
