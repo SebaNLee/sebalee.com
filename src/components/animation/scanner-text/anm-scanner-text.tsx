@@ -10,7 +10,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export function AnmRevealText({
+export function AnmScannerText({
   delay = 0,
   duration = 1000,
   fontColor = "rgb(10 10 10)",

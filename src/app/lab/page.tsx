@@ -1,5 +1,5 @@
 import { AnmBar } from "@/components/animation/bar/anm-bar";
-import { AnmRevealText } from "@/components/animation/scanner-text/anm-scanner-text";
+import { AnmScannerText } from "@/components/animation/scanner-text/anm-scanner-text";
 import { AnmScanner } from "@/components/animation/scanner/anm-scanner";
 
 export default function Lab() {
@@ -22,20 +22,20 @@ export default function Lab() {
       </div>
       <div>
         <p>lab TODO</p>
-        <AnmRevealText delay={900}>
+        <AnmScannerText delay={900}>
           TODO:
           <p>this is a test |</p>
-        </AnmRevealText>
+        </AnmScannerText>
         <hr />
         <br />
-        <AnmRevealText
+        <AnmScannerText
           delay={900}
           fontColor="rgb(0 255 0)"
           scannerColor="rgb(0 0 255)"
         >
           TODO:
           <p>second test</p>
-        </AnmRevealText>
+        </AnmScannerText>
       </div>
     </>
   );
