@@ -18,8 +18,29 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/Helvetica.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-display: swap;
+}
+
 @theme {
   --font-ava: "AVA", sans-serif;
   --font-ibm-logo: "IBM-Logo", monospace;
   --font-ibm: "IBM", monospace;
+  --font-helvetica: "Helvetica", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-satoshi: "Satoshi", sans-serif;
 }
