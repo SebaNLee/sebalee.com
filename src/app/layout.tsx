@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-inter font-medium antialiased text-neutral-950 bg-[rgb(238,242,250)]`} // TODO font
+        className={`font-satoshi font-medium antialiased text-neutral-950 bg-[rgb(238,242,250)]`}
       >
         {/* Google tag (gtag.js) */}
         <Script

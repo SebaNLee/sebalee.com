@@ -26,7 +26,7 @@ export default function Navbar() {
                 className={clsx(
                   styles.item,
                   pathname === href && styles.active,
-                  "text-xs px-[0.2rem] py-[0.05rem]",
+                  "text-xs px-[0.2rem] py-[0.05rem] tracking-wider",
                 )}
               >
                 {label}
