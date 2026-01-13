@@ -1,6 +1,8 @@
 import { AnmRevealGrid } from "@/components/animation/reveal-grid/anm-reveal-grid";
 import { GALLERIES } from "../page";
 import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-text";
+import { FiArrowLeft } from "react-icons/fi";
+import Link from "next/link";
 
 type Props = {
   params: Promise<{
@@ -30,6 +32,16 @@ export default async function GalleryFolder({ params }: Props) {
             px-1 md:px-10 2xl:p-40
             "
           >
+            <Link href="/gallery">
+              <FiArrowLeft
+                className="
+              fixed
+              top-2 md:top-5 2xl:top-8
+              left-2 md:left-5 2xl:left-8
+              text-base md:text-xl 2xl:text-2xl
+              "
+              />
+            </Link>
             <div className="flex flex-col md:flex-1 md:flex-col items-center md:items-start">
               <p className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
                 GALLERY
