@@ -90,66 +90,6 @@ export default function Projects() {
                     "Repo to store all my ITBA related personal code. Really not for showcase, but feel free to explore it. "
                   }
                 />
-                <Project
-                  name={"itba-github"}
-                  link={"https://github.com/SebaNLee/itba-github"}
-                  icons={[
-                    "devicon-c-original",
-                    "ASM",
-                    "devicon-java-plain",
-                    "devicon-ruby-plain",
-                    "SQL",
-                    "devicon-python-plain",
-                  ]}
-                  description={
-                    "Repo to store all my ITBA related personal code. Really not for showcase, but feel free to explore it. "
-                  }
-                />
-                <Project
-                  name={"itba-github"}
-                  link={"https://github.com/SebaNLee/itba-github"}
-                  icons={[
-                    "devicon-c-original",
-                    "ASM",
-                    "devicon-java-plain",
-                    "devicon-ruby-plain",
-                    "SQL",
-                    "devicon-python-plain",
-                  ]}
-                  description={
-                    "Repo to store all my ITBA related personal code. Really not for showcase, but feel free to explore it. "
-                  }
-                />
-                <Project
-                  name={"itba-github"}
-                  link={"https://github.com/SebaNLee/itba-github"}
-                  icons={[
-                    "devicon-c-original",
-                    "ASM",
-                    "devicon-java-plain",
-                    "devicon-ruby-plain",
-                    "SQL",
-                    "devicon-python-plain",
-                  ]}
-                  description={
-                    "Repo to store all my ITBA related personal code. Really not for showcase, but feel free to explore it. "
-                  }
-                />
-                <Project
-                  name={"itba-github"}
-                  link={"https://github.com/SebaNLee/itba-github"}
-                  icons={[
-                    "devicon-c-original",
-                    "ASM",
-                    "devicon-java-plain",
-                    "devicon-ruby-plain",
-                    "SQL",
-                    "devicon-python-plain",
-                  ]}
-                  description={
-                    "Repo to store all my ITBA related personal code. Really not for showcase, but feel free to explore it. "
-                  }
-                />
               </div>
             </div>
           </div>
