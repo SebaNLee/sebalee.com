@@ -16,11 +16,11 @@ export default function Home() {
             items-center
             justify-start md:justify-center
             pt-[40%] md:pt-0
-            px-6 md:px-10 2xl:p-40
+            px-1 md:px-10 2xl:p-40
             "
           >
             <div className="flex flex-col md:flex-1 md:flex-col items-center md:items-start">
-              <p className="font-satoshi text-3xl font-thin md:text-6xl 2xl:text-7xl">
+              <p className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
                 SEBASTIÁN NICOLÁS LEE
               </p>
               <p className="font-satoshi text-[0.6em] md:text-lg 2xl:text-xl">
