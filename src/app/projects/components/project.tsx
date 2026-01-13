@@ -27,7 +27,10 @@ export function Project({ name, link, icons, description }: Props) {
         text-sm md:text-base 2xl:text-xl
         "
         >
-          <a href={link} className="underline flex items-center">
+          <a
+            href={link}
+            className="underline flex items-center hover:text-neutral-600"
+          >
             {name}
             <FiArrowUpRight />
           </a>
