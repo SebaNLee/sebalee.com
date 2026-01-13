@@ -25,7 +25,8 @@ export default function Navbar() {
               <span
                 className={clsx(
                   styles.item,
-                  pathname === href && styles.active,
+                  pathname.split("/")[1] === href.split("/")[1] &&
+                    styles.active,
                   "px-[0.2rem] py-[0.05rem] tracking-wider",
                   "text-[0.6rem] md:text-xs 2xl:text-base",
                 )}
