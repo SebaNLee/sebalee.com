@@ -43,7 +43,7 @@ export default function Home() {
             >
               <p>Welcome to my website!</p>
               <p>
-                Pleased to make your acquaintance. I&apos;s Sebalee. I always
+                Pleased to make your acquaintance. I&apos;m Sebalee. I always
                 like having an active project; if it&apos;s not on GitHub
                 it&apos;s usually some geeky offline stuff.{" "}
               </p>
