@@ -9,41 +9,48 @@ type Props = {
 
 export function Project({ name, link, icons, description }: Props) {
   return (
-    <div
-      className="
+    <>
+      {/* https://github.com/devicons/devicon */}
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+      />
+      <div
+        className="
       text-justify
       mb-4 md:mb-6 2xl:mb-8
       "
-    >
-      <p
-        className="
+      >
+        <p
+          className="
         flex items-center
         text-sm md:text-base 2xl:text-xl
         "
-      >
-        <a href={link} className="underline flex items-center">
-          {name}
-          <FiArrowUpRight />
-        </a>
-        <p className="ml-2 flex flex-row justify-center items-center gap-1 text-xs 2xl:text-base">
-          {icons?.map((item) =>
-            item.startsWith("devicon-") ? (
-              <i key={item} className={item}></i>
-            ) : (
-              <span key={item} className="font-mono text-xs">
-                {item}
-              </span>
-            ),
-          )}
+        >
+          <a href={link} className="underline flex items-center">
+            {name}
+            <FiArrowUpRight />
+          </a>
+          <p className="ml-2 flex flex-row justify-center items-center gap-1 text-xs 2xl:text-base">
+            {icons?.map((item) =>
+              item.startsWith("devicon-") ? (
+                <i key={item} className={item}></i>
+              ) : (
+                <span key={item} className="font-mono text-xs">
+                  {item}
+                </span>
+              ),
+            )}
+          </p>
         </p>
-      </p>
-      <p
-        className="
+        <p
+          className="
         text-xs md:text-sm 2xl:text-base
         "
-      >
-        {description}
-      </p>
-    </div>
+        >
+          {description}
+        </p>
+      </div>
+    </>
   );
 }
