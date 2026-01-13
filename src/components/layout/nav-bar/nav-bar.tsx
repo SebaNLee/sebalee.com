@@ -19,14 +19,15 @@ export default function Navbar() {
   return (
     <div className="-translate-y-1/2">
       <AnmScannerText delay={1500}>
-        <nav className="flex gap-7 px-3">
+        <nav className="flex gap-7 px-5 py-2">
           {links.map(({ href, label }) => (
             <Link key={href} href={href}>
               <span
                 className={clsx(
                   styles.item,
                   pathname === href && styles.active,
-                  "text-xs px-[0.2rem] py-[0.05rem] tracking-wider",
+                  "px-[0.2rem] py-[0.05rem] tracking-wider",
+                  "text-[0.6rem] md:text-xs 2xl:text-base",
                 )}
               >
                 {label}
