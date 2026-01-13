@@ -25,12 +25,16 @@ export default function Projects() {
               </p>
             </div>
 
-            {/* TODO make this thing scrollable */}
             <div
               className="
               md:w-[35vw]
               mt-12 md:mt-0
               px-6 md:px-0
+
+              scrollbar-none
+              max-h-[90vh]
+              overflow-y-auto
+              overscroll-contain
               "
             >
               <div>
@@ -69,6 +73,66 @@ export default function Projects() {
                   icons={["devicon-c-original", "ASM"]}
                   description={
                     "This one is based on the later Arqui-TPE-20251Q operating system. Extended the project adding an internal scheduler, processes notion, semaphores, pipes, memory management, and much more."
+                  }
+                />
+                <Project
+                  name={"itba-github"}
+                  link={"https://github.com/SebaNLee/itba-github"}
+                  icons={[
+                    "devicon-c-original",
+                    "ASM",
+                    "devicon-java-plain",
+                    "devicon-ruby-plain",
+                    "SQL",
+                    "devicon-python-plain",
+                  ]}
+                  description={
+                    "Repo to store all my ITBA related personal code. Really not for showcase, but feel free to explore it. "
+                  }
+                />
+                <Project
+                  name={"itba-github"}
+                  link={"https://github.com/SebaNLee/itba-github"}
+                  icons={[
+                    "devicon-c-original",
+                    "ASM",
+                    "devicon-java-plain",
+                    "devicon-ruby-plain",
+                    "SQL",
+                    "devicon-python-plain",
+                  ]}
+                  description={
+                    "Repo to store all my ITBA related personal code. Really not for showcase, but feel free to explore it. "
+                  }
+                />
+                <Project
+                  name={"itba-github"}
+                  link={"https://github.com/SebaNLee/itba-github"}
+                  icons={[
+                    "devicon-c-original",
+                    "ASM",
+                    "devicon-java-plain",
+                    "devicon-ruby-plain",
+                    "SQL",
+                    "devicon-python-plain",
+                  ]}
+                  description={
+                    "Repo to store all my ITBA related personal code. Really not for showcase, but feel free to explore it. "
+                  }
+                />
+                <Project
+                  name={"itba-github"}
+                  link={"https://github.com/SebaNLee/itba-github"}
+                  icons={[
+                    "devicon-c-original",
+                    "ASM",
+                    "devicon-java-plain",
+                    "devicon-ruby-plain",
+                    "SQL",
+                    "devicon-python-plain",
+                  ]}
+                  description={
+                    "Repo to store all my ITBA related personal code. Really not for showcase, but feel free to explore it. "
                   }
                 />
                 <Project
