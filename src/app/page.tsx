@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { FiArrowUpRight } from "react-icons/fi";
 import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-text";
 import { AnmRevealGrid } from "@/components/animation/reveal-grid/anm-reveal-grid";
 
@@ -59,10 +59,26 @@ export default function Home() {
               </p>
 
               <p className="flex flex-row underline text-xs md:text-md gap-5 mt-8 md:mt-8">
-                <a href="https://github.com/SebaNLee">GitHub</a>
-                <a href="https://www.linkedin.com/in/sebalee/">LinkedIn</a>
-                <a href="https://mailto:seba.nico.lee@gmail.com">
+                <a
+                  href="https://github.com/SebaNLee"
+                  className="flex items-center"
+                >
+                  GitHub
+                  <FiArrowUpRight />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/sebalee/"
+                  className="flex items-center"
+                >
+                  LinkedIn
+                  <FiArrowUpRight />
+                </a>
+                <a
+                  href="https://mailto:seba.nico.lee@gmail.com"
+                  className="flex items-center"
+                >
                   seba.nico.lee@gmail.com
+                  <FiArrowUpRight />
                 </a>
               </p>
             </div>
