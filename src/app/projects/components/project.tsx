@@ -21,7 +21,7 @@ export function Project({ name, link, icons, description }: Props) {
       mb-4 md:mb-6 2xl:mb-8
       "
       >
-        <p
+        <div
           className="
         flex items-center
         text-sm md:text-base 2xl:text-xl
@@ -42,7 +42,7 @@ export function Project({ name, link, icons, description }: Props) {
               ),
             )}
           </p>
-        </p>
+        </div>
         <p
           className="
         text-xs md:text-sm 2xl:text-base
