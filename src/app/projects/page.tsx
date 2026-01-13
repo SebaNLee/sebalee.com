@@ -6,7 +6,6 @@ export default function Projects() {
   return (
     <>
       <AnmRevealGrid invertOpacity />
-      <div className="absolute inset-0 pointer-events-none"></div>
       <div>
         <AnmRevealText delay={500}>
           <div
