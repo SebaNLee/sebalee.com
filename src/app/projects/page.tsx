@@ -37,6 +37,12 @@ export default function Projects() {
                 <Project
                   name={"node_thing"}
                   link={"https://github.com/teofum/node_thing"}
+                  icons={[
+                    "devicon-typescript-plain",
+                    "devicon-react-original",
+                    "devicon-nextjs-plain",
+                    "devicon-webgpu-plain",
+                  ]}
                   description={
                     "This app is a node-based shader editor. It works like the node graphs used in game engines, but focused on shaders. You can connect different shader nodes to compose powerful visual effects and create fun outputs in an intuitive way."
                   }
@@ -44,13 +50,15 @@ export default function Projects() {
                 <Project
                   name={"boids-engine"}
                   link={"https://github.com/SebaNLee/boids-engine"}
+                  icons={["devicon-rust-original", "devicon-wasm-original"]}
                   description={
-                    "A slightly modified Boids algorithm engine which simulates flocking behavior of birds. Originally intended to be used as the background of this webpage, but ended up with a more minimalistic design."
+                    "A slightly modified Boids algorithm engine which simulates flocking behavior of birds. Originally intended to be used as the background of this webpage, but ended up with a more minimalistic design. You can see it in /lab tho!"
                   }
                 />
                 <Project
                   name={"Arqui-TPE-20251Q"}
                   link={"https://github.com/SebaNLee/Arqui-TPE-20251Q"}
+                  icons={["devicon-c-original", "ASM"]}
                   description={
                     "A work based on the Pure64 kernel. Learned the distinction of kernel and user space of an operating system and many more design decisions. Extra attention was also given to visual and design elements, do check it out!"
                   }
@@ -58,6 +66,7 @@ export default function Projects() {
                 <Project
                   name={"SO-TP2-20252Q"}
                   link={"https://github.com/SebaNLee/SO-TP2-20252Q"}
+                  icons={["devicon-c-original", "ASM"]}
                   description={
                     "This one is based on the later Arqui-TPE-20251Q operating system. Extended the project adding an internal scheduler, processes notion, semaphores, pipes, memory management, and much more."
                   }
@@ -65,6 +74,14 @@ export default function Projects() {
                 <Project
                   name={"itba-github"}
                   link={"https://github.com/SebaNLee/itba-github"}
+                  icons={[
+                    "devicon-c-original",
+                    "ASM",
+                    "devicon-java-plain",
+                    "devicon-ruby-plain",
+                    "SQL",
+                    "devicon-python-plain",
+                  ]}
                   description={
                     "Repo to store all my ITBA related personal code. Really not for showcase, but feel free to explore it. "
                   }
