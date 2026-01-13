@@ -20,10 +20,10 @@ export default function Home() {
             "
           >
             <div className="flex flex-col md:flex-1 md:flex-col items-center md:items-start">
-              <p className="font-satoshi text-4xl font-thin md:text-6xl 2xl:text-7xl">
+              <p className="font-satoshi text-3xl font-thin md:text-6xl 2xl:text-7xl">
                 SEBASTIÁN NICOLÁS LEE
               </p>
-              <p className="font-satoshi text-xs md:text-lg 2xl:text-xl">
+              <p className="font-satoshi text-[0.6em] md:text-lg 2xl:text-xl">
                 Software Engineering Student
               </p>
             </div>
