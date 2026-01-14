@@ -74,7 +74,36 @@ export default async function GalleryFolder({ params }: Props) {
               </p>
             </div>
 
-            <div>{/* TODO masontry gallery */}</div>
+            <div
+              className="
+                md:w-[55vw]
+                px-6 md:px-0
+                py-2 md:py-4 2xl:py-6
+
+                scrollbar-none
+                md:h-[90vh]
+                overflow-y-auto
+                overscroll-contain
+              "
+            >
+              <div
+                className="
+                columns-2 md:columns-3 2xl:columns-4
+                gap-1 md:gap-3 2xl:gap-4
+                "
+              >
+                {photos.map((photo, i) => (
+                  <div
+                    key={i}
+                    className="
+                    mb-1 md:mb-3 2xl:mb-4
+                    "
+                  >
+                    <img src={photo.src} alt="" />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </AnmRevealText>
       </div>
