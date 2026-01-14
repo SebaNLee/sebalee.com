@@ -17,6 +17,12 @@ export async function generateStaticParams() {
 export default async function GalleryFolder({ params }: Props) {
   const { folder } = await params;
 
+  const MAX = 30;
+
+  const photos = Array.from({ length: MAX }).map((_, i) => ({
+    path: `/images/${folder}/${i + 1}.jpg`,
+  }));
+
   return (
     <>
       <AnmRevealGrid invertOpacity />
