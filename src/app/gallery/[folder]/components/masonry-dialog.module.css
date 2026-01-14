@@ -1,0 +1,41 @@
+/* TODO repeated code foom nav-bar.module.css */
+
+.item {
+  position: relative;
+}
+
+.item::before,
+.item::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  transition:
+    180ms ease,
+    180ms ease;
+}
+
+.item::before {
+  top: -6px;
+  left: -6px;
+  border-top: 1px solid currentColor;
+  border-left: 1px solid currentColor;
+  transform: translate(-2px, -2px);
+}
+
+.item::after {
+  bottom: -6px;
+  right: -6px;
+  border-bottom: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  transform: translate(2px, 2px);
+}
+
+.item:hover::before,
+.item:hover::after,
+.active::before,
+.active::after {
+  opacity: 1;
+  transform: translate(0, 0);
+}

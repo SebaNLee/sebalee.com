@@ -3,6 +3,7 @@ import { GALLERIES } from "../page";
 import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-text";
 import { FiArrowLeft } from "react-icons/fi";
 import Link from "next/link";
+import { MasonryDialog } from "./components/masonry-dialog";
 
 type Props = {
   params: Promise<{
@@ -60,7 +61,7 @@ export default async function GalleryFolder({ params }: Props) {
             <div
               className="
                 md:w-[55vw]
-                px-6 md:px-0
+                px-4 md:px-2
                 py-2 md:py-4 2xl:py-6
 
                 scrollbar-none
@@ -69,23 +70,7 @@ export default async function GalleryFolder({ params }: Props) {
                 overscroll-contain
               "
             >
-              <div
-                className="
-                columns-2 md:columns-3 2xl:columns-4
-                gap-1 md:gap-3 2xl:gap-4
-                "
-              >
-                {photos.map((photo, i) => (
-                  <div
-                    key={i}
-                    className="
-                    mb-1 md:mb-3 2xl:mb-4
-                    "
-                  >
-                    <img src={photo.path} alt="" />
-                  </div>
-                ))}
-              </div>
+              <MasonryDialog photos={photos} />
             </div>
           </div>
         </AnmRevealText>
