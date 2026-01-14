@@ -3,6 +3,9 @@ import { GALLERIES } from "../page";
 import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-text";
 import { FiArrowLeft } from "react-icons/fi";
 import Link from "next/link";
+import fs from "fs";
+import path from "path";
+import sizeOf from "image-size";
 
 type Props = {
   params: Promise<{
@@ -17,11 +20,27 @@ export async function generateStaticParams() {
 export default async function GalleryFolder({ params }: Props) {
   const { folder } = await params;
 
-  const MAX = 30;
+  const MAX = 30; // TODO hardcode
 
-  const photos = Array.from({ length: MAX }).map((_, i) => ({
-    path: `/images/${folder}/${i + 1}.jpg`,
-  }));
+  const imagesDir = path.join(process.cwd(), "public", "images", folder);
+
+  const files = fs
+    .readdirSync(imagesDir)
+    .filter((f) => /\.(jpg|jpeg|png|webp)$/i.test(f));
+
+  const photos = files.map((file) => {
+    const filePath = path.join(imagesDir, file);
+    const buffer = fs.readFileSync(filePath);
+    const { width, height } = sizeOf(buffer);
+
+    return {
+      src: `/images/${folder}/${file}`,
+      width,
+      height,
+    };
+  });
+
+  console.log(photos[1].width);
 
   return (
     <>
