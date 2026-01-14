@@ -40,8 +40,6 @@ export default async function GalleryFolder({ params }: Props) {
     };
   });
 
-  console.log(photos[1].width);
-
   return (
     <>
       <AnmRevealGrid invertOpacity />
