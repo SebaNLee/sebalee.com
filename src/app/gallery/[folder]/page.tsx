@@ -82,7 +82,7 @@ export default async function GalleryFolder({ params }: Props) {
                     mb-1 md:mb-3 2xl:mb-4
                     "
                   >
-                    <img src={photo.src} alt="" />
+                    <img src={photo.path} alt="" />
                   </div>
                 ))}
               </div>
