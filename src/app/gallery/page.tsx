@@ -50,10 +50,8 @@ export default function Gallery() {
   return (
     <>
       <AnmRevealGrid invertOpacity />
-      <div>
-        <AnmRevealText delay={500}>
-          <div
-            className="
+      <div
+        className="
             w-full h-full gap-1
             flex flex-col md:flex-row
             items-center
@@ -61,15 +59,15 @@ export default function Gallery() {
             pt-[8%] md:pt-0
             px-1 md:px-10 2xl:p-40
             "
-          >
-            <div className="flex flex-col md:flex-1 md:flex-col items-center md:items-start">
-              <p className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
-                GALLERY
-              </p>
-            </div>
+      >
+        <div className="flex flex-col md:flex-1 md:flex-col items-center md:items-start">
+          <p className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
+            GALLERY
+          </p>
+        </div>
 
-            <div
-              className="
+        <div
+          className="
               md:w-[35vw]
               mt-12 md:mt-0
               px-6 md:px-0
@@ -79,45 +77,40 @@ export default function Gallery() {
               overflow-y-auto
               overscroll-contain
               "
-            >
-              {[...GALLERIES]
-                .sort((a, b) => b.year - a.year)
-                .map((gallery, i, arr) => {
-                  const flagYear = i === 0 || gallery.year !== arr[i - 1].year;
+        >
+          {[...GALLERIES]
+            .sort((a, b) => b.year - a.year)
+            .map((gallery, i, arr) => {
+              const flagYear = i === 0 || gallery.year !== arr[i - 1].year;
 
-                  return (
-                    <div
-                      key={gallery.slug}
-                      className="
+              return (
+                <div
+                  key={gallery.slug}
+                  className="
                     text-sm md:text-base 2xl:text-xl
                     my-0 md:my-0.5 2xl:my-1
                     "
-                    >
-                      {flagYear && (
-                        <p
-                          className="
+                >
+                  {flagYear && (
+                    <p
+                      className="
                         opacity-50
                         text-base md:text-xl 2xl:text-2xl
                         mt-3 md:mt-8 2xl:mt-10
                         "
-                        >
-                          {gallery.year}
-                        </p>
-                      )}
-                      <Link
-                        href={`/gallery/${gallery.slug}`}
-                        className="underline"
-                      >
-                        {`${gallery.title} - `}
-                        {gallery.city && `${gallery?.city}, `}
-                        {gallery.country}
-                      </Link>
-                    </div>
-                  );
-                })}
-            </div>
-          </div>
-        </AnmRevealText>
+                    >
+                      {gallery.year}
+                    </p>
+                  )}
+                  <Link href={`/gallery/${gallery.slug}`} className="underline">
+                    {`${gallery.title} - `}
+                    {gallery.city && `${gallery?.city}, `}
+                    {gallery.country}
+                  </Link>
+                </div>
+              );
+            })}
+        </div>
       </div>
     </>
   );
