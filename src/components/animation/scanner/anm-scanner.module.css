@@ -13,7 +13,7 @@
   background: var(--scanner-color);
   opacity: 0;
 
-  animation: scanner ease forwards;
+  animation: scanner cubic-bezier(0.45, 0.9, 0, 1) forwards;
   animation-duration: var(--duration);
   animation-delay: var(--delay);
 }
@@ -22,10 +22,10 @@
   0% {
     left: var(--posx);
     top: var(--posy);
-    opacity: 0;
+    opacity: 1;
   }
-  50% {
-    opacity: 0.6;
+  70% {
+    opacity: 1;
   }
   100% {
     left: calc(var(--posx) + var(--vertical) * var(--move));

@@ -20,7 +20,7 @@ export function AnmScanner({
   length = 20,
   thickness = 1,
   delay = 0,
-  duration = 1900,
+  duration = 1500,
   vertical = false,
   scannerColor = "rgb(10 10 10)",
 }: Props) {
