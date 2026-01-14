@@ -25,6 +25,7 @@ export function MasonryDialog({ photos }: { photos: Photo[] }) {
       <div
         className="
           columns-2 md:columns-3 2xl:columns-4
+          gap-3 md:gap-4
         "
       >
         {photos.map((photo, i) => (
@@ -32,8 +33,8 @@ export function MasonryDialog({ photos }: { photos: Photo[] }) {
             key={i}
             className={clsx(
               styles.item,
-              "mb-3 md:mb-3 2xl:mb-4",
-              "cursor-pointer",
+              "mb-1 md:mb-2",
+              "cursor-pointer inline-block",
             )}
             onClick={() => open(photo.path)}
           >
