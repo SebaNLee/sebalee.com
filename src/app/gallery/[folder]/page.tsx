@@ -53,7 +53,7 @@ export default async function GalleryFolder({ params }: Props) {
               <p className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
                 GALLERY
               </p>
-              <p className="font-satoshi text-[0.6em] md:text-lg 2xl:text-xl">
+              <p className="font-satoshi text-[0.6em] md:text-lg 2xl:text-xl opacity-60">
                 {folder}
               </p>
             </div>

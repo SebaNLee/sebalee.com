@@ -20,7 +20,7 @@ export default function Home() {
           <p className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
             SEBASTIÁN NICOLÁS LEE
           </p>
-          <p className="font-satoshi text-[0.6em] md:text-lg 2xl:text-xl">
+          <p className="font-satoshi text-[0.6em] md:text-lg 2xl:text-xl opacity-60">
             Software Engineering Student
           </p>
         </div>
