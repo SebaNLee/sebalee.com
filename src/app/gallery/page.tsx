@@ -13,6 +13,20 @@ export type GalleryFolder = {
 
 export const GALLERIES: GalleryFolder[] = [
   {
+    slug: "2013-tandil",
+    title: "Tandil",
+    country: "Argentina",
+    year: 2013,
+    device: "A1367",
+  },
+  {
+    slug: "2014-tandil",
+    title: "Tandil",
+    country: "Argentina",
+    year: 2014,
+    device: "A1367",
+  },
+  {
     slug: "2015-tandil",
     title: "Tandil",
     country: "Argentina",
