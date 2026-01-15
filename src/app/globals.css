@@ -1,30 +1,6 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "AVA";
-  src: url("/fonts/AVA-Regular.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "IBM-Logo";
-  src: url("/fonts/IBM-Logo.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "IBM";
-  src: url("/fonts/Web437_IBM_BIOS.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Helvetica";
-  src: url("/fonts/Helvetica.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Inter";
   src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
   font-display: swap;
@@ -37,10 +13,6 @@
 }
 
 @theme {
-  --font-ava: "AVA", sans-serif;
-  --font-ibm-logo: "IBM-Logo", monospace;
-  --font-ibm: "IBM", monospace;
-  --font-helvetica: "Helvetica", sans-serif;
   --font-inter: "Inter", sans-serif;
   --font-satoshi: "Satoshi", sans-serif;
 }
