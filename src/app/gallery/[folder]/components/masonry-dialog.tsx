@@ -58,8 +58,8 @@ export function MasonryDialog({ photos }: { photos: Photo[] }) {
             alt=""
             onClick={() => close()}
             className="
-              max-w-[85vw]
-              max-h-[80vh]
+              max-w-[95vw]
+              max-h-[90vh]
             "
           />
         </dialog>
