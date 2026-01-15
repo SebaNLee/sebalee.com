@@ -18,6 +18,8 @@ export async function generateStaticParams() {
 export default async function GalleryFolder({ params }: Props) {
   const { folder } = await params;
 
+  const gallery = GALLERIES.find((gallery) => gallery.slug === folder);
+
   const MAX = 30; // TODO hardcode
 
   const photos = Array.from({ length: MAX }).map((_, i) => ({
@@ -54,7 +56,7 @@ export default async function GalleryFolder({ params }: Props) {
                 GALLERY
               </p>
               <p className="font-satoshi text-[0.6em] md:text-lg 2xl:text-xl opacity-60">
-                {folder}
+                {gallery?.title} - {gallery?.year}
               </p>
             </div>
 

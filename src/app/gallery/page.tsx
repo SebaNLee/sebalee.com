@@ -29,7 +29,7 @@ export const GALLERIES: GalleryFolder[] = [
   { slug: "2019-seoul", title: "Seoul", country: "South Korea", year: 2019 },
   {
     slug: "2020-new-york-city",
-    title: "NYC",
+    title: "New York City",
     country: "United States",
     year: 2020,
   },
