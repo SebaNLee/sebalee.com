@@ -56,7 +56,7 @@ export default async function GalleryFolder({ params }: Props) {
                 GALLERY
               </p>
               <p className="font-satoshi text-[0.6em] md:text-lg 2xl:text-xl opacity-60">
-                {gallery?.title} - {gallery?.year}
+                {gallery?.title} - {gallery?.year} - {gallery?.device}
               </p>
             </div>
 

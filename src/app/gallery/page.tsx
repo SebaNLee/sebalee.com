@@ -8,41 +8,94 @@ export type GalleryFolder = {
   city?: string;
   country: string;
   year: number;
+  device?: string;
 };
 
 export const GALLERIES: GalleryFolder[] = [
-  { slug: "2015-tandil", title: "Tandil", country: "Argentina", year: 2015 },
-  { slug: "2016-tandil", title: "Tandil", country: "Argentina", year: 2016 },
+  {
+    slug: "2015-tandil",
+    title: "Tandil",
+    country: "Argentina",
+    year: 2015,
+    device: "A1367",
+  },
+  {
+    slug: "2016-tandil",
+    title: "Tandil",
+    country: "Argentina",
+    year: 2016,
+    device: "A1367",
+  },
   {
     slug: "2017-japanese-garden",
     title: "Japanese Garden",
     city: "CABA",
     country: "Argentina",
     year: 2017,
+    device: "SM-C5000",
   },
   {
     slug: "2018-iguazu",
     title: "Iguazú",
     country: "Argentina/Brazil",
     year: 2018,
+    device: "SM-N9500",
   },
-  { slug: "2019-seoul", title: "Seoul", country: "South Korea", year: 2019 },
+  {
+    slug: "2019-seoul",
+    title: "Seoul",
+    country: "South Korea",
+    year: 2019,
+    device: "SM-N9500",
+  },
   {
     slug: "2020-new-york-city",
     title: "New York City",
     country: "United States",
     year: 2020,
+    device: "SM-N9500",
   },
-  { slug: "2023-sydney", title: "Sydney", country: "Australia", year: 2023 },
-  { slug: "2023-seoul", title: "Seoul", country: "South Korea", year: 2023 },
-  { slug: "2023-tokyo", title: "Tokyo", country: "Japan", year: 2023 },
-  { slug: "2023-kyoto", title: "Kyoto", country: "Japan", year: 2023 },
-  { slug: "2023-osaka", title: "Osaka", country: "Japan", year: 2023 },
+  {
+    slug: "2023-sydney",
+    title: "Sydney",
+    country: "Australia",
+    year: 2023,
+    device: "SM-G998B",
+  },
+  {
+    slug: "2023-seoul",
+    title: "Seoul",
+    country: "South Korea",
+    year: 2023,
+    device: "SM-G998B",
+  },
+  {
+    slug: "2023-tokyo",
+    title: "Tokyo",
+    country: "Japan",
+    year: 2023,
+    device: "SM-G998B",
+  },
+  {
+    slug: "2023-kyoto",
+    title: "Kyoto",
+    country: "Japan",
+    year: 2023,
+    device: "SM-G998B",
+  },
+  {
+    slug: "2023-osaka",
+    title: "Osaka",
+    country: "Japan",
+    year: 2023,
+    device: "SM-G998B",
+  },
   {
     slug: "2023-london",
     title: "London",
     country: "United Kingdom",
     year: 2023,
+    device: "SM-G998B",
   },
 ];
 
