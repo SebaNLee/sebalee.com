@@ -17,14 +17,14 @@ export const GALLERIES: GalleryFolder[] = [
     title: "Tandil",
     country: "Argentina",
     year: 2015,
-    device: "A1367",
+    device: "GT-I9500",
   },
   {
     slug: "2016-tandil",
     title: "Tandil",
     country: "Argentina",
     year: 2016,
-    device: "A1367",
+    device: "GT-I9500",
   },
   {
     slug: "2017-japanese-garden",
