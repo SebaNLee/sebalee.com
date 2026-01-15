@@ -53,7 +53,7 @@ export default function Projects() {
               link={"https://github.com/SebaNLee/boids-engine"}
               icons={["devicon-rust-original", "devicon-wasm-original"]}
               description={
-                "A slightly modified Boids algorithm engine which simulates flocking behavior of birds. Originally intended to be used as the background of this webpage, but ended up with a more minimalistic design. You can see it in /lab tho!"
+                "A slightly modified Boids algorithm engine that simulates the flocking behavior of birds. Originally intended to be used as the background of this webpage, but ended up with a more minimalistic design. You can see it in /lab tho!"
               }
             />
             <Project
@@ -61,7 +61,7 @@ export default function Projects() {
               link={"https://github.com/SebaNLee/Arqui-TPE-20251Q"}
               icons={["devicon-c-original", "ASM"]}
               description={
-                "An operating system based on the Pure64 kernel. Learned the distinction of kernel and user space of an operating system and many more design decisions. Extra attention was also given to visual and design elements, do check it out!"
+                "An operating system based on the Pure64 kernel. Learned the distinction between kernel and user space of an operating system and many more design decisions. Extra attention was also given to visual and design elements, do check it out!"
               }
             />
             <Project
@@ -69,7 +69,7 @@ export default function Projects() {
               link={"https://github.com/SebaNLee/SO-TP2-20252Q"}
               icons={["devicon-c-original", "ASM"]}
               description={
-                "This one is based on the later Arqui-TPE-20251Q operating system. Extended the project adding an internal scheduler, processes notion, semaphores, pipes, memory management, and much more."
+                "This one is based on the earlier Arqui-TPE-20251Q operating system. Extended the project adding an internal scheduler, process notions, semaphores, pipes, memory management, and much more."
               }
             />
             <Project
