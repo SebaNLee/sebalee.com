@@ -18,7 +18,7 @@ export function AnmBar({
   length = 20,
   thickness = 1,
   delay = 0,
-  duration = 600,
+  duration = 1100,
   vertical = false,
   barColor = "rgb(10 10 10)",
 }: Props) {

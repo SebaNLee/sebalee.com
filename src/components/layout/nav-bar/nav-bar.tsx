@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <div className="-translate-y-1/2">
-      <AnmScannerText delay={1500}>
+      <AnmScannerText delay={2000}>
         <nav className="flex gap-7 px-5 py-2">
           {links.map(({ href, label }) => (
             <Link key={href} href={href}>
