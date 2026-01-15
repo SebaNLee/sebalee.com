@@ -19,6 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/icon.png" type="image/png" />
       <body
         className={`font-satoshi font-medium antialiased text-neutral-950 bg-[rgb(238,242,250)]`}
       >
