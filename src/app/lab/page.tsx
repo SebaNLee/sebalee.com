@@ -4,6 +4,7 @@ import { AnmRevealGrid } from "@/components/animation/reveal-grid/anm-reveal-gri
 import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-text";
 import { AnmScanner } from "@/components/animation/scanner/anm-scanner";
 import BoidsBackground from "@/components/layout/boids-background";
+import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Lab() {
   return (
@@ -117,21 +118,35 @@ export default function Lab() {
               <p className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
                 LAB
               </p>
+              {/* TODO add random when adding other proyects, framework */}
+              <p className="font-satoshi text-[0.6em] md:text-lg 2xl:text-xl opacity-60">
+                Featuring: {"boids-engine"}
+              </p>
             </div>
 
             <div
               className="
-              md:w-[35vw]
-              mt-12 md:mt-0
-              px-6 md:px-0
-
-              scrollbar-none
-              max-h-[90vh]
-              overflow-y-auto
-              overscroll-contain
-              "
+                  text-justify
+                  flex flex-col md:flex-col
+                  md:w-[35vw]
+                  items-center md:items-start
+                  mt-auto md:mt-0
+                  mb-3 md:mb-0
+                  gap-2 md:gap-4
+                  text-xs md:text-sm 2xl:text-base
+                  px-12 md:px-0
+                  "
             >
-              <div>temp1</div>
+              {/* TODO add random when adding other proyects, framework */}
+              <p>Currently showcasing boids-engine.</p>
+              <p>
+                A slightly modified Boids algorithm. The bird-oid objects get
+                attracted to your mouse!
+              </p>
+              <p>
+                Coded in Rust and running it with WebAssembly, should be pretty
+                efficient.
+              </p>
             </div>
           </div>
         </AnmRevealText>
