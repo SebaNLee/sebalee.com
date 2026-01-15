@@ -61,7 +61,7 @@ export default function Projects() {
               link={"https://github.com/SebaNLee/Arqui-TPE-20251Q"}
               icons={["devicon-c-original", "ASM"]}
               description={
-                "A work based on the Pure64 kernel. Learned the distinction of kernel and user space of an operating system and many more design decisions. Extra attention was also given to visual and design elements, do check it out!"
+                "An operating system based on the Pure64 kernel. Learned the distinction of kernel and user space of an operating system and many more design decisions. Extra attention was also given to visual and design elements, do check it out!"
               }
             />
             <Project
