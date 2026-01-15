@@ -22,11 +22,10 @@ export default function BoidsBackground() {
     canvas.height = height;
     canvas.style.backgroundColor = "transparent";
 
-    const world = new WorldAPI(
-      (canvas.width * canvas.height) / 5000,
-      canvas.width,
-      canvas.height,
-    );
+    const flagMobile = window.innerWidth <= 768;
+    const BOIDS = flagMobile ? 100 : 300;
+
+    const world = new WorldAPI(BOIDS, canvas.width, canvas.height);
     worldRef.current = world;
     worldRef.current.set_params("separation", 4.1);
     worldRef.current.set_params("alignment", 2.6);
@@ -63,9 +62,12 @@ export default function BoidsBackground() {
       ctx.restore();
 
       ctx.fillStyle = "black";
+      const size = flagMobile
+        ? Math.max(1, Math.min(canvas.width, canvas.height) / 500)
+        : 1;
 
       for (let i = 0; i < buffer.length; i += 2) {
-        ctx.fillRect(buffer[i], buffer[i + 1], 1, 1);
+        ctx.fillRect(buffer[i], buffer[i + 1], size, size);
       }
 
       requestAnimationFrame(step);
