@@ -155,14 +155,14 @@ export default function Gallery() {
                   key={gallery.slug}
                   className="
                     text-sm md:text-base 2xl:text-xl
-                    my-0 md:my-0.5 2xl:my-1
+                    my-2.5 md:my-3
                     "
                 >
                   {flagYear && (
                     <p
                       className="
                         opacity-50
-                        text-base md:text-xl 2xl:text-2xl
+                        text-lg md:text-2xl
                         mt-3 md:mt-8 2xl:mt-10
                         "
                     >
