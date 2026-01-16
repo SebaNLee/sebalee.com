@@ -73,6 +73,19 @@ export default function Projects() {
               }
             />
             <Project
+              name={"sebalee.com"}
+              link={"https://github.com/SebaNLee/sebalee.com"}
+              icons={[
+                "devicon-typescript-plain",
+                "devicon-react-original",
+                "devicon-nextjs-plain",
+                "devicon-wasm-original",
+              ]}
+              description={
+                "The website you are currently on. Personal portfolio webpage with a variety of stuff to showcase."
+              }
+            />
+            <Project
               name={"itba-github"}
               link={"https://github.com/SebaNLee/itba-github"}
               icons={[
