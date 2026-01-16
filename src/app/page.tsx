@@ -17,12 +17,12 @@ export default function Home() {
             "
       >
         <div className="flex flex-col md:flex-1 md:flex-col items-center md:items-start">
-          <p className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
+          <h2 className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
             SEBASTIÁN NICOLÁS LEE
-          </p>
-          <p className="font-satoshi text-[0.6em] md:text-lg 2xl:text-xl opacity-60">
+          </h2>
+          <h3 className="font-satoshi text-[0.6em] md:text-lg 2xl:text-xl opacity-60">
             Software Engineering Student
-          </p>
+          </h3>
         </div>
 
         <div

@@ -115,13 +115,13 @@ export default function Lab() {
             "
           >
             <div className="flex flex-col md:flex-1 md:flex-col items-center md:items-start">
-              <p className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
+              <h2 className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
                 LAB
-              </p>
+              </h2>
               {/* TODO add random when adding other proyects, framework */}
-              <p className="font-satoshi text-[0.6em] md:text-lg 2xl:text-xl opacity-60">
+              <h3 className="font-satoshi text-[0.6em] md:text-lg 2xl:text-xl opacity-60">
                 Featuring: {"boids-engine"}
-              </p>
+              </h3>
             </div>
 
             <div

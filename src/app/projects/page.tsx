@@ -17,9 +17,9 @@ export default function Projects() {
             "
       >
         <div className="flex flex-col md:flex-1 md:flex-col items-center md:items-start">
-          <p className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
+          <h2 className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
             PROJECTS
-          </p>
+          </h2>
         </div>
 
         <div
