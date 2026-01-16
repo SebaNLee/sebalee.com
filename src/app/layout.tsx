@@ -11,7 +11,23 @@ export const metadata: Metadata = {
   title: "Sebastián Nicolás Lee",
   description:
     "Sup! I'm Sebalee, currently a software engineering student. I always like having an active project; if it's not on GitHub it's usually some geeky offline stuff.",
-}; // TODO
+  openGraph: {
+    title: "Sebastián Nicolás Lee - Portfolio",
+    description: "Sebalee's portfolio",
+    url: "https://sebalee.com",
+    siteName: "Sebastián Nicolás Lee",
+    images: [
+      {
+        url: "https://sebalee.com/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Sebastián Nicolás Lee portfolio preview",
+      },
+    ],
+
+    type: "website",
+  },
+};
 
 export default function RootLayout({
   children,
