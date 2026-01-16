@@ -57,7 +57,7 @@ export default function RootLayout({
           gtag('config', 'G-MYPY986RMT');
         `}
         </Script>
-        <div className="relative flex flex-col min-h-screen w-screen px-[2vw] pt-[7.5vh] pb-[2.5vh]">
+        <div className="relative flex flex-col min-h-svh w-screen px-[2vw] pt-[7.5vh] pb-[2.5vh]">
           <div className="relative flex-1 h-full w-full">
             <AnmRevealText delay={2880} duration={1200}>
               {children}
