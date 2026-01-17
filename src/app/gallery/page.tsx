@@ -9,6 +9,7 @@ export type GalleryFolder = {
   country: string;
   year: number;
   device?: string;
+  count: number;
 };
 
 export const GALLERIES: GalleryFolder[] = [
@@ -18,6 +19,7 @@ export const GALLERIES: GalleryFolder[] = [
     country: "Argentina",
     year: 2013,
     device: "A1367",
+    count: 9,
   },
   {
     slug: "2014-tandil",
@@ -25,6 +27,7 @@ export const GALLERIES: GalleryFolder[] = [
     country: "Argentina",
     year: 2014,
     device: "A1367",
+    count: 9,
   },
   {
     slug: "2015-tandil",
@@ -32,6 +35,7 @@ export const GALLERIES: GalleryFolder[] = [
     country: "Argentina",
     year: 2015,
     device: "GT-I9500",
+    count: 6,
   },
   {
     slug: "2016-tandil",
@@ -39,6 +43,7 @@ export const GALLERIES: GalleryFolder[] = [
     country: "Argentina",
     year: 2016,
     device: "GT-I9500",
+    count: 7,
   },
   {
     slug: "2017-japanese-garden",
@@ -47,6 +52,7 @@ export const GALLERIES: GalleryFolder[] = [
     country: "Argentina",
     year: 2017,
     device: "SM-C5000",
+    count: 4,
   },
   {
     slug: "2018-iguazu",
@@ -54,6 +60,7 @@ export const GALLERIES: GalleryFolder[] = [
     country: "Argentina/Brazil",
     year: 2018,
     device: "SM-N9500",
+    count: 6,
   },
   {
     slug: "2019-seoul",
@@ -61,6 +68,7 @@ export const GALLERIES: GalleryFolder[] = [
     country: "South Korea",
     year: 2019,
     device: "SM-N9500",
+    count: 12,
   },
   {
     slug: "2020-new-york-city",
@@ -68,6 +76,7 @@ export const GALLERIES: GalleryFolder[] = [
     country: "United States",
     year: 2020,
     device: "SM-N9500",
+    count: 10,
   },
   {
     slug: "2023-sydney",
@@ -75,6 +84,7 @@ export const GALLERIES: GalleryFolder[] = [
     country: "Australia",
     year: 2023,
     device: "SM-G998B",
+    count: 8,
   },
   {
     slug: "2023-seoul",
@@ -82,6 +92,7 @@ export const GALLERIES: GalleryFolder[] = [
     country: "South Korea",
     year: 2023,
     device: "SM-G998B",
+    count: 10,
   },
   {
     slug: "2023-tokyo",
@@ -89,6 +100,7 @@ export const GALLERIES: GalleryFolder[] = [
     country: "Japan",
     year: 2023,
     device: "SM-G998B",
+    count: 24,
   },
   {
     slug: "2023-kyoto",
@@ -96,6 +108,7 @@ export const GALLERIES: GalleryFolder[] = [
     country: "Japan",
     year: 2023,
     device: "SM-G998B",
+    count: 21,
   },
   {
     slug: "2023-osaka",
@@ -103,6 +116,7 @@ export const GALLERIES: GalleryFolder[] = [
     country: "Japan",
     year: 2023,
     device: "SM-G998B",
+    count: 9,
   },
   {
     slug: "2023-london",
@@ -110,6 +124,7 @@ export const GALLERIES: GalleryFolder[] = [
     country: "United Kingdom",
     year: 2023,
     device: "SM-G998B",
+    count: 9,
   },
 ];
 

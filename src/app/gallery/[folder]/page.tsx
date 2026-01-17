@@ -20,9 +20,7 @@ export default async function GalleryFolder({ params }: Props) {
 
   const gallery = GALLERIES.find((gallery) => gallery.slug === folder);
 
-  const MAX = 30; // TODO hardcode
-
-  const photos = Array.from({ length: MAX }).map((_, i) => ({
+  const photos = Array.from({ length: gallery?.count ?? 0 }).map((_, i) => ({
     path: `/images/${folder}/${i + 1}.jpg`,
   }));
 
