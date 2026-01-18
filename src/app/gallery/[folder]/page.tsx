@@ -4,6 +4,8 @@ import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-tex
 import { FiArrowLeft } from "react-icons/fi";
 import Link from "next/link";
 import { MasonryDialog } from "./components/masonry-dialog";
+import { Suspense } from "react";
+import { MasronySkeleton } from "./components/masonry-skeleton";
 
 type Props = {
   params: Promise<{
@@ -60,7 +62,7 @@ export default async function GalleryFolder({ params }: Props) {
 
             <div
               className="
-                md:w-[55vw]
+                w-full md:w-[55vw]
                 px-4 md:px-2
                 py-2 md:py-4 2xl:py-6
 
@@ -70,7 +72,9 @@ export default async function GalleryFolder({ params }: Props) {
                 overscroll-contain
               "
             >
-              <MasonryDialog photos={photos} />
+              <Suspense fallback={<MasronySkeleton count={gallery?.count} />}>
+                <MasonryDialog photos={photos} />
+              </Suspense>
             </div>
           </div>
         </AnmRevealText>
