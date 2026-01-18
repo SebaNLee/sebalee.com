@@ -72,7 +72,7 @@ export default async function GalleryFolder({ params }: Props) {
                 overscroll-contain
               "
             >
-              <Suspense fallback={<MasronySkeleton count={gallery?.count} />}>
+              <Suspense fallback={<MasronySkeleton />}>
                 <MasonryDialog photos={photos} />
               </Suspense>
             </div>
