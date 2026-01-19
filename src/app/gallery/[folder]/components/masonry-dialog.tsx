@@ -3,12 +3,16 @@
 import clsx from "clsx";
 import { useRef, useState } from "react";
 import styles from "./masonry-dialog.module.css";
+import { MasronySkeleton } from "./masonry-skeleton";
 
 type Photo = { path: string };
 
 export function MasonryDialog({ photos }: { photos: Photo[] }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [active, setActive] = useState<string | null>(null);
+
+  const [loaded, setLoaded] = useState(0);
+  const flagLoaded = loaded === photos.length;
 
   const open = (src: string) => {
     setActive(src);
@@ -22,6 +26,7 @@ export function MasonryDialog({ photos }: { photos: Photo[] }) {
 
   return (
     <>
+      {!flagLoaded && <MasronySkeleton />}
       <div
         className="
           columns-2 md:columns-3 2xl:columns-4
@@ -38,7 +43,11 @@ export function MasonryDialog({ photos }: { photos: Photo[] }) {
             )}
             onClick={() => open(photo.path)}
           >
-            <img src={photo.path} alt="" />
+            <img
+              src={photo.path}
+              alt=""
+              onLoad={() => setLoaded((value) => value + 1)}
+            />
           </div>
         ))}
       </div>
