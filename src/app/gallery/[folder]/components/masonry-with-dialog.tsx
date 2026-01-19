@@ -2,12 +2,12 @@
 
 import clsx from "clsx";
 import { useRef, useState } from "react";
-import styles from "./masonry-dialog.module.css";
+import styles from "./masonry-with-dialog.module.css";
 import { MasronySkeleton } from "./masonry-skeleton";
 
 type Photo = { path: string };
 
-export function MasonryDialog({ photos }: { photos: Photo[] }) {
+export function MasonryWithDialog({ photos }: { photos: Photo[] }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [active, setActive] = useState<string | null>(null);
 

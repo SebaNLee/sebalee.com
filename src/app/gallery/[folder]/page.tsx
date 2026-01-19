@@ -3,7 +3,7 @@ import { GALLERIES } from "../page";
 import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-text";
 import { FiArrowLeft } from "react-icons/fi";
 import Link from "next/link";
-import { MasonryDialog } from "./components/masonry-dialog";
+import { MasonryWithDialog } from "./components/masonry-with-dialog";
 
 type Props = {
   params: Promise<{
@@ -70,7 +70,7 @@ export default async function GalleryFolder({ params }: Props) {
                 overscroll-contain
               "
             >
-              <MasonryDialog photos={photos} />
+              <MasonryWithDialog photos={photos} />
             </div>
           </div>
         </AnmRevealText>
