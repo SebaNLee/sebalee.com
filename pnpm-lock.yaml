@@ -17,6 +17,9 @@ importers:
       next:
         specifier: 16.1.1
         version: 16.1.1(@babel/core@7.28.5)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      procedural-engines-wasm:
+        specifier: ^0.1.0
+        version: 0.1.0
       react:
         specifier: 19.2.3
         version: 19.2.3
@@ -1733,6 +1736,9 @@ packages:
     resolution: {integrity: sha512-v6UNi1+3hSlVvv8fSaoUbggEM5VErKmmpGA7Pl3HF8V6uKY7rvClBOJlH6yNwQtfTueNkGVpOv/mtWL9L4bgRA==}
     engines: {node: '>=14'}
     hasBin: true
+
+  procedural-engines-wasm@0.1.0:
+    resolution: {integrity: sha512-yNDXdCiPbVF0mv7dupovdR93+xp8rUGM967G9iVlaRDHv89BK+l5GHRjDYa8ITtTAagQ/5XqEVKoCPTB6rAzgw==}
 
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
@@ -3834,6 +3840,8 @@ snapshots:
   prelude-ls@1.2.1: {}
 
   prettier@3.7.4: {}
+
+  procedural-engines-wasm@0.1.0: {}
 
   prop-types@15.8.1:
     dependencies:
