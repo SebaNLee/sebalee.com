@@ -1,10 +1,10 @@
 "use client";
 
 import { useRef } from "react";
-import { WorldAPI } from "boids-wasm";
+import { BoidsAPI } from "procedural-engines-wasm";
 
 export default function BoidsBackground() {
-  const worldRef = useRef<WorldAPI | null>(null);
+  const boidsRef = useRef<BoidsAPI | null>(null);
 
   const canvasRef = (canvas: HTMLCanvasElement | null) => {
     if (!canvas) {
@@ -25,35 +25,35 @@ export default function BoidsBackground() {
     const flagMobile = window.innerWidth <= 768;
     const BOIDS = flagMobile ? 100 : 300;
 
-    const world = new WorldAPI(BOIDS, canvas.width, canvas.height);
-    worldRef.current = world;
-    worldRef.current.set_params("separation", 4.1);
-    worldRef.current.set_params("alignment", 2.6);
-    worldRef.current.set_params("cohesion", 4.0);
-    worldRef.current.set_params("attraction", 0.15);
-    worldRef.current.set_params("noise", 3.7);
-    worldRef.current.set_params("max_speed", 100.0);
-    worldRef.current.set_params("perception_radius", 30.0);
-    worldRef.current.set_bounce_on_edge(false);
+    const world = new BoidsAPI(BOIDS, canvas.width, canvas.height);
+    boidsRef.current = world;
+    boidsRef.current.set_params("separation", 4.1);
+    boidsRef.current.set_params("alignment", 2.6);
+    boidsRef.current.set_params("cohesion", 4.0);
+    boidsRef.current.set_params("attraction", 0.15);
+    boidsRef.current.set_params("noise", 3.7);
+    boidsRef.current.set_params("max_speed", 100.0);
+    boidsRef.current.set_params("perception_radius", 30.0);
+    boidsRef.current.set_bounce_on_edge(false);
 
     // v.1
-    // worldRef.current.set_params("separation", 3.1);
-    // worldRef.current.set_params("alignment", 0.6);
-    // worldRef.current.set_params("cohesion", 3.0);
-    // worldRef.current.set_params("attraction", 4.5);
-    // worldRef.current.set_params("noise", 1.7);
-    // worldRef.current.set_params("max_speed", 300.0);
-    // worldRef.current.set_params("perception_radius", 80.0);
-    // worldRef.current.set_bounce_on_edge(false);
+    // boidsRef.current.set_params("separation", 3.1);
+    // boidsRef.current.set_params("alignment", 0.6);
+    // boidsRef.current.set_params("cohesion", 3.0);
+    // boidsRef.current.set_params("attraction", 4.5);
+    // boidsRef.current.set_params("noise", 1.7);
+    // boidsRef.current.set_params("max_speed", 300.0);
+    // boidsRef.current.set_params("perception_radius", 80.0);
+    // boidsRef.current.set_bounce_on_edge(false);
 
     const step = () => {
-      if (!worldRef.current) {
+      if (!boidsRef.current) {
         return;
       }
 
-      worldRef.current.step(0.016);
+      boidsRef.current.step(0.016);
 
-      const buffer = worldRef.current.get_boids();
+      const buffer = boidsRef.current.get_boids();
 
       ctx.save();
       ctx.globalCompositeOperation = "destination-out";
@@ -77,10 +77,10 @@ export default function BoidsBackground() {
 
     const onMove = (e: MouseEvent) => {
       const { left, top } = canvas.getBoundingClientRect();
-      worldRef.current?.set_attractor(e.clientX - left, e.clientY - top);
+      boidsRef.current?.set_attractor(e.clientX - left, e.clientY - top);
     };
 
-    const onLeave = () => worldRef.current?.clear_attractor();
+    const onLeave = () => boidsRef.current?.clear_attractor();
 
     const container = canvas.parentElement!;
     container.addEventListener("mousemove", onMove);
