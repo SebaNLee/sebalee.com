@@ -49,11 +49,11 @@ export default function Projects() {
               }
             />
             <Project
-              name={"boids-engine"}
-              link={"https://github.com/SebaNLee/boids-engine"}
+              name={"procedural-engines"}
+              link={"https://github.com/SebaNLee/procedural-engines"}
               icons={["devicon-rust-original", "devicon-wasm-original"]}
               description={
-                "A slightly modified Boids algorithm engine that simulates the flocking behavior of birds. Originally intended to be used as the background of this webpage, but ended up with a more minimalistic design. You can see it in /lab tho!"
+                "Repo with a variety of procedural generation algorithms coded in Rust and exported as an NPM package for use with WASM. You can see them in action in /lab!"
               }
             />
             <Project
