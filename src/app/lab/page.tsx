@@ -4,9 +4,40 @@ import { AnmRevealGrid } from "@/components/animation/reveal-grid/anm-reveal-gri
 import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-text";
 import { AnmScanner } from "@/components/animation/scanner/anm-scanner";
 import BoidsBackground from "@/components/layout/boids-background";
+import TopographyBackground from "@/components/layout/topography-background";
 import { FiArrowUpRight } from "react-icons/fi";
 
+const PROJECTS = [
+  {
+    id: "boids-engine",
+    Component: BoidsBackground,
+    title: "boids-engine",
+    description: [
+      "Currently showcasing boids-engine.",
+      "A slightly modified Boids algorithm. The bird-oid objects get attracted to your mouse!",
+      "Coded in Rust and running it with WebAssembly, should be pretty efficient.",
+    ],
+  },
+  {
+    id: "topography-engine",
+    Component: TopographyBackground,
+    title: "topography-engine",
+    description: [
+      "Currently showcasing topography-engine.",
+      "Computes topography-map-like borders using diamond-square, marching squares and box blur.",
+      "Was also coded in Rust and running it with WebAssembly, should be pretty efficient.",
+    ],
+  },
+];
+
+const MINUTES = Math.floor(Date.now() / 60000);
+
 export default function Lab() {
+  // alternate projects every minute
+  const index = MINUTES % PROJECTS.length;
+  const project = PROJECTS[index];
+  const { Component } = project;
+
   return (
     <>
       <AnmRevealGrid invertOpacity />
@@ -103,7 +134,7 @@ export default function Lab() {
       </div>
       <div>
         <AnmRevealText delay={2580} duration={400}>
-          <BoidsBackground />
+          <Component />
           <div
             className="
             w-full h-full gap-1
@@ -118,9 +149,8 @@ export default function Lab() {
               <h2 className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
                 LAB
               </h2>
-              {/* TODO add random when adding other proyects, framework */}
               <h3 className="font-satoshi text-[0.6em] md:text-lg 2xl:text-xl opacity-60">
-                Featuring: {"boids-engine"}
+                Featuring: {project.title}
               </h3>
             </div>
 
@@ -137,16 +167,9 @@ export default function Lab() {
                   px-12 md:px-0
                   "
             >
-              {/* TODO add random when adding other proyects, framework */}
-              <p>Currently showcasing boids-engine.</p>
-              <p>
-                A slightly modified Boids algorithm. The bird-oid objects get
-                attracted to your mouse!
-              </p>
-              <p>
-                Coded in Rust and running it with WebAssembly, should be pretty
-                efficient.
-              </p>
+              {project.description.map((line, i) => (
+                <p key={i}>{line}</p>
+              ))}
             </div>
           </div>
         </AnmRevealText>
