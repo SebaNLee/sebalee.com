@@ -28,10 +28,11 @@ export function MasonryWithDialog({ photos }: { photos: Photo[] }) {
     <>
       {!flagLoaded && <MasronySkeleton />}
       <div
-        className="
-          columns-2 md:columns-3 2xl:columns-4
-          gap-3 md:gap-4
-        "
+        className={clsx(
+          "columns-2 md:columns-3 2xl:columns-4",
+          "gap-3 md:gap-4",
+          !flagLoaded && "opacity-0",
+        )}
       >
         {photos.map((photo, i) => (
           <div
