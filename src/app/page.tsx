@@ -17,6 +17,7 @@ export default function Home() {
             "
       >
         <div className="flex flex-col md:flex-1 md:flex-col items-center md:items-start">
+          <h1 className="sr-only">Sebastián Nicolás Lee</h1>
           <h2 className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
             SEBASTIÁN NICOLÁS LEE
           </h2>
@@ -38,7 +39,11 @@ export default function Home() {
               px-12 md:px-0
               "
         >
-          <p>Welcome to my website!</p>
+          <p className="sr-only">
+            I'm Sebalee, currently a software engineering student. I always like
+            having an active project; if it's not on GitHub it's usually some
+            geeky offline stuff.
+          </p>
           <p>
             Pleased to make your acquaintance. I&apos;m Sebalee. I&apos;m always
             doing some sort of project; if it&apos;s not on GitHub it&apos;s

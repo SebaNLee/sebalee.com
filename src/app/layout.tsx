@@ -10,12 +10,16 @@ import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-tex
 export const metadata: Metadata = {
   title: "Sebastián Nicolás Lee",
   description:
-    "Sup! I'm Sebalee, currently a software engineering student. I always like having an active project; if it's not on GitHub it's usually some geeky offline stuff.",
+    "I'm Sebalee, currently a software engineering student. I always like having an active project; if it's not on GitHub it's usually some geeky offline stuff.",
+  other: {
+    "google-site-name": "Sebalee's portfolio",
+  },
   openGraph: {
-    title: "Sebastián Nicolás Lee - Portfolio",
-    description: "Sebalee's portfolio",
+    title: "Sebastián Nicolás Lee",
+    description:
+      "I'm Sebalee, currently a software engineering student. I always like having an active project; if it's not on GitHub it's usually some geeky offline stuff.",
     url: "https://sebalee.com",
-    siteName: "Sebastián Nicolás Lee",
+    siteName: "Sebalee's portfolio",
     images: [
       {
         url: "https://sebalee.com/og.png",
