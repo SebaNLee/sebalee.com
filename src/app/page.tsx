@@ -45,14 +45,14 @@ export default function Home() {
             geeky offline stuff.
           </p>
           <p>
-            Pleased to make your acquaintance. I&apos;m Sebalee. I&apos;m always
-            doing some sort of project; if it&apos;s not on GitHub it&apos;s
-            usually some geeky offline stuff.{" "}
+            Pleased to make your acquaintance. I'm Sebalee. I'm always doing
+            some sort of project; if it's not on GitHub it's usually some geeky
+            offline stuff.{" "}
           </p>
           <p>
             I love low-level work, system architecture design, and classical ML.
-            I&apos;ve learned web development too. Fun and all, but I much
-            prefer the other stuff.
+            I've learned web development too. Fun and all, but I much prefer the
+            other stuff.
           </p>
           <p>
             Outside tech, I generally enjoy learning new stuff: love reading,
