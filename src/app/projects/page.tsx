@@ -2,6 +2,75 @@ import { AnmRevealGrid } from "@/components/animation/reveal-grid/anm-reveal-gri
 import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-text";
 import { Project } from "./components/project";
 
+type Project = {
+  name: string;
+  link: string;
+  icons: string[];
+  description: string;
+};
+
+const PROJECTS: Project[] = [
+  {
+    name: "node_thing",
+    link: "https://github.com/teofum/node_thing",
+    icons: [
+      "devicon-typescript-plain",
+      "devicon-react-original",
+      "devicon-nextjs-plain",
+      "devicon-webgpu-plain",
+    ],
+    description:
+      "This app is a node-based shader editor. It works like the node graphs used in game engines, but focused on shaders. You can connect different shader nodes to compose powerful visual effects and create fun outputs in an intuitive way.",
+  },
+  {
+    name: "procedural-engines",
+    link: "https://github.com/SebaNLee/procedural-engines",
+    icons: ["devicon-rust-original", "devicon-wasm-original"],
+    description:
+      "Repo with a variety of procedural generation algorithms coded in Rust and exported as an NPM package for use with WASM. You can see them in action in /lab!",
+  },
+  {
+    name: "Arqui-TPE-20251Q",
+    link: "https://github.com/SebaNLee/Arqui-TPE-20251Q",
+    icons: ["devicon-c-original", "ASM"],
+    description:
+      "An operating system based on the Pure64 kernel. Learned the distinction between kernel and user space of an operating system and many more design decisions. Extra attention was also given to visual and design elements, do check it out!",
+  },
+  {
+    name: "SO-TP2-20252Q",
+    link: "https://github.com/SebaNLee/SO-TP2-20252Q",
+    icons: ["devicon-c-original", "ASM"],
+    description:
+      "This one is based on the earlier Arqui-TPE-20251Q operating system. Extended the project adding an internal scheduler, process notions, semaphores, pipes, memory management, and much more.",
+  },
+  {
+    name: "sebalee.com",
+    link: "https://github.com/SebaNLee/sebalee.com",
+    icons: [
+      "devicon-typescript-plain",
+      "devicon-react-original",
+      "devicon-nextjs-plain",
+      "devicon-wasm-original",
+    ],
+    description:
+      "The website you are currently on. Personal portfolio webpage with a variety of stuff to showcase.",
+  },
+  {
+    name: "itba-github",
+    link: "https://github.com/SebaNLee/itba-github",
+    icons: [
+      "devicon-c-original",
+      "ASM",
+      "devicon-java-plain",
+      "devicon-ruby-plain",
+      "SQL",
+      "devicon-python-plain",
+    ],
+    description:
+      "Repo to store all my ITBA related personal code. Really not for showcase, but feel free to explore it.",
+  },
+];
+
 export default function Projects() {
   return (
     <>
@@ -35,71 +104,9 @@ export default function Projects() {
               "
         >
           <div>
-            <Project
-              name={"node_thing"}
-              link={"https://github.com/teofum/node_thing"}
-              icons={[
-                "devicon-typescript-plain",
-                "devicon-react-original",
-                "devicon-nextjs-plain",
-                "devicon-webgpu-plain",
-              ]}
-              description={
-                "This app is a node-based shader editor. It works like the node graphs used in game engines, but focused on shaders. You can connect different shader nodes to compose powerful visual effects and create fun outputs in an intuitive way."
-              }
-            />
-            <Project
-              name={"procedural-engines"}
-              link={"https://github.com/SebaNLee/procedural-engines"}
-              icons={["devicon-rust-original", "devicon-wasm-original"]}
-              description={
-                "Repo with a variety of procedural generation algorithms coded in Rust and exported as an NPM package for use with WASM. You can see them in action in /lab!"
-              }
-            />
-            <Project
-              name={"Arqui-TPE-20251Q"}
-              link={"https://github.com/SebaNLee/Arqui-TPE-20251Q"}
-              icons={["devicon-c-original", "ASM"]}
-              description={
-                "An operating system based on the Pure64 kernel. Learned the distinction between kernel and user space of an operating system and many more design decisions. Extra attention was also given to visual and design elements, do check it out!"
-              }
-            />
-            <Project
-              name={"SO-TP2-20252Q"}
-              link={"https://github.com/SebaNLee/SO-TP2-20252Q"}
-              icons={["devicon-c-original", "ASM"]}
-              description={
-                "This one is based on the earlier Arqui-TPE-20251Q operating system. Extended the project adding an internal scheduler, process notions, semaphores, pipes, memory management, and much more."
-              }
-            />
-            <Project
-              name={"sebalee.com"}
-              link={"https://github.com/SebaNLee/sebalee.com"}
-              icons={[
-                "devicon-typescript-plain",
-                "devicon-react-original",
-                "devicon-nextjs-plain",
-                "devicon-wasm-original",
-              ]}
-              description={
-                "The website you are currently on. Personal portfolio webpage with a variety of stuff to showcase."
-              }
-            />
-            <Project
-              name={"itba-github"}
-              link={"https://github.com/SebaNLee/itba-github"}
-              icons={[
-                "devicon-c-original",
-                "ASM",
-                "devicon-java-plain",
-                "devicon-ruby-plain",
-                "SQL",
-                "devicon-python-plain",
-              ]}
-              description={
-                "Repo to store all my ITBA related personal code. Really not for showcase, but feel free to explore it. "
-              }
-            />
+            {PROJECTS.map((project) => (
+              <Project key={project.name} {...project} />
+            ))}
           </div>
         </div>
       </div>
