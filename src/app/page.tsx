@@ -17,7 +17,10 @@ export default function Home() {
             "
       >
         <div className="flex flex-col md:flex-1 md:flex-col items-center md:items-start">
-          <h1 className="sr-only">Sebastián Nicolás Lee</h1>
+          <h1 className="sr-only">
+            Sebastián Lee, also known as: Sebastián Nicolás Lee, Sebalee,
+            SebaNLee
+          </h1>
           <h2 className="font-satoshi text-3xl font-normal md:font-thin md:text-6xl 2xl:text-7xl">
             SEBASTIÁN NICOLÁS LEE
           </h2>
