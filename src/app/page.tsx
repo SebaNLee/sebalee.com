@@ -1,5 +1,4 @@
 import { FiArrowUpRight } from "react-icons/fi";
-import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-text";
 import { AnmRevealGrid } from "@/components/animation/reveal-grid/anm-reveal-grid";
 
 export default function Home() {

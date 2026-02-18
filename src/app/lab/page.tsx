@@ -1,11 +1,8 @@
-import { AnmBar } from "@/components/animation/bar/anm-bar";
-import { AnmRectangle } from "@/components/animation/rectangle/anm-rectangle";
 import { AnmRevealGrid } from "@/components/animation/reveal-grid/anm-reveal-grid";
 import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-text";
 import { AnmScanner } from "@/components/animation/scanner/anm-scanner";
 import BoidsBackground from "@/components/layout/boids-background";
 import TopographyBackground from "@/components/layout/topography-background";
-import { FiArrowUpRight } from "react-icons/fi";
 import LabShowcase from "./components/lab-showcase";
 
 export const SHOWCASE = [

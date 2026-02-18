@@ -1,5 +1,4 @@
 import { AnmRevealGrid } from "@/components/animation/reveal-grid/anm-reveal-grid";
-import { AnmRevealText } from "@/components/animation/reveal-text/anm-reveal-text";
 import Link from "next/link";
 
 export type GalleryFolder = {

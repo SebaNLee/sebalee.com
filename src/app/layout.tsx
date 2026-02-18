@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import BoidsBackground from "@/components/layout/boids-background";
 import Script from "next/script";
 import { AnmBar } from "@/components/animation/bar/anm-bar";
 import { AnmRectangle } from "@/components/animation/rectangle/anm-rectangle";
