@@ -1,12 +1,20 @@
 "use client";
 
 import { TopographyAPI } from "procedural-engines-wasm";
+import { useRef } from "react";
 
 export default function TopographyBackground() {
+  const runningRef = useRef(false);
   const canvasRef = (canvas: HTMLCanvasElement | null) => {
     if (!canvas) {
       return;
     }
+
+    if (runningRef.current) {
+      return;
+    }
+
+    runningRef.current = true;
 
     const ctx = canvas.getContext("2d", { alpha: true });
     if (!ctx) {
