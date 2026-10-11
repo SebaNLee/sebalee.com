@@ -52,8 +52,6 @@ export default function TopographyBackground() {
     (async () => {
       ctx.clearRect(0, 0, width, height);
 
-      await delay(3500);
-
       for (let level = 0; level < LEVELS; level++) {
         ctx.strokeStyle = "rgb(150,150,150)";
         ctx.beginPath();
